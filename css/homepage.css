@@ -1,0 +1,72 @@
+body {
+    font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+#adDiv {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    background-image: url(https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/6706fa26-6361-490d-bfe2-03efbd786881.jpg);
+}
+
+#adDiv>div {
+    width: 38%;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 20px;
+    line-height: 1;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#notifyDiv {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1d1f;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+#notifyDiv>div {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1d1f;
+    color: white;
+}
+
+#notifyDiv>div>div:first-child {
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: white;
+    color: black;
+
+}
+
+#notifyDiv>div>div:last-child {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #1c1d1f;
+    color: white;
+    border: 1px solid white;
+}
+#mainCourseDiv {
+    width: 90%;
+    margin: auto;
+}
