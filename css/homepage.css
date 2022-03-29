@@ -109,7 +109,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
-#topics h3{
+#topics h3,h1{
     color: #027bff;
 }
 #topics>div:last-child{

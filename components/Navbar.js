@@ -60,33 +60,19 @@ const navbar = () => {
      </div>
      <a href=""><div>Udemy Business</div></a>
      <a href=""><div>Teach on Udemy</div></a>
-     <a href=""><div>My learing</div></a>
-     <div id="wishlist">
-     <i class="fa-regular fa-heart"></i>
-     </div>
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
      </div>
-     <div id="bellicon">
-     <i class="fa-regular fa-bell"></i>
+     <div id="login">
+     Log in
      </div>
-     <div id="profile">
-     <i class="fa-regular fa-user"></i>
+     <div id="signup">
+     Sign up
      </div>
+     <div id="lng">
+     <i class="fa-solid fa-globe"></i>
      </div>
-     <div>
-     <p>Devlopment</p>
-     <p>Business</p>
-     <p>Finance & Accounting</p>
-     <p>IT & Software</p>
-     <p>Office Productivity</p>
-     <p>Personal Devlopment</p>
-     <p>Design</p>
-     <p>Marketing</p>
-     <p>Health & Fitness</p>
-     <p>Music</p>
-     </div>
-     `
+     </div>`
 }
 export default navbar;
 
