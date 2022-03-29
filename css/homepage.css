@@ -1,5 +1,5 @@
 body {
-    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
 #adDiv {
@@ -56,7 +56,6 @@ body {
     color: black;
 
 }
-
 #notifyDiv>div>div:last-child {
     height: 40px;
     display: flex;
@@ -70,3 +69,67 @@ body {
     width: 90%;
     margin: auto;
 }
+.udemyB {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.udemyB>div{
+    width: 40%;
+    margin-top:60px;
+}
+.udemyB>div>div {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 30%;
+}
+#unic{
+    width: 40% !important;
+}
+#company {
+    margin-bottom: 50px;
+    padding: 25px 0px;
+    background-color: #f7f9fa;
+    text-align: center;
+}
+#company img{
+   margin-right: 10px;
+}
+
+#topics{
+    background-color: #f7f9fa;
+    padding: 50px 0px;
+}
+#topics>div:first-child{
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#topics h3{
+    color: #027bff;
+}
+#topics>div:last-child{
+    width: 170px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+body>h2{
+    margin-left: 70px;
+}
+#categories{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+
