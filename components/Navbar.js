@@ -10,25 +10,25 @@ const navbar = () => {
      Devlopment
      <i class="fa-solid fa-angle-right"></i>
      <div id="devlopHover">
-     <div>Devlopment
+     <div> Web Devlopment
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Business
+         <div>Data Science
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Finance & Accounting
+         <div>Mobile Devlopment
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>IT & Software
+         <div>Programming l=Languages
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Office Productivity
+         <div>Game Devlopment
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Personal Devlopment
+         <div>Database Design & Devlopment
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Design
+         <div>Softwere Testing
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Marketing
+         <div>Softwere Engineering
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Health & Fitness
+         <div>Softwere Devlopment Tools
          <i class="fa-solid fa-angle-right"></i></div>
-         <div>Music
+         <div>No-code Devlopment
          <i class="fa-solid fa-angle-right"></i></div>
          </div>
        </div>
