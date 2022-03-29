@@ -4,9 +4,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Category</title>
+    <title>top category starting</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+      
+#main-content
+{
+  width: auto;
+  line-height: 1.6rem;
+  padding: 146px;
+  padding-top: 0px;
+}
+
+#main-content {
+  height: 63rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+#topcourse {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 1rem;
+}
+
+.subcourses {
+  /* border: 1px solid rgb(220, 218, 203);
+  border-radius: 5px; */
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.subcourses > img {
+  width: 100%;
+}
+
+.subcourses span,
+#main-content > h3 {
+  position: relative;
+  left: 15px;
+  top: 5px;
+  font-weight: 790;
+  font-size: 114%;
+  color: #1c1d1f;
+  display: block;
+  height: 55px;
+  text-align: initial;
+}
+.subcourses>span{
+    margin-left: -15px;
+}
+
+#main-content > h3
+ {
+  font-size: 135%;
+  display: block;
+  height: 3%;
+}
+
+#main-content > h2 {
+
+  color: #1c1d1f;
+}
+
+#main-content-2 {
+  padding: 145px;
+  padding-top:40px;
+
+  position: relative;
+  /* top: -45px; */
+  margin-top: -300px;
+  height: 27rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+
+  background: #f7f9fa;
+  padding-bottom: 80px;
+  
+}
+#main-content-2>h2{
+    font-size: 24px;
+   
+}
+
+#linktocourses {
+  width: 81vw;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.6rem;
+  margin-top: -20px;
+  margin-right: 2.4rem;
+  margin-left: -1px;
+ 
+  
+}
+#linktocourses>.subparts{
+    /* margin-right: 20px; */
+    padding-right: 10     0px;
+}
+
+.subparts h2 {
+  color: rgb(60, 59, 55);
+  font-size: 19px;
+
+  
+}
+
+.subparts div {
+  margin-bottom: 20px;
+  line-height:30px;
+}
+
+.subparts div > button {
+  width: auto;
+  height: 40px;
+  
+ 
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  color: #1c1d1f;
+    background-color: transparent;
+    border: 1px solid #1c1d1f;
+}
+
+.subparts div > a {
+  color: #5624d0;
+  font-size: 14px;
+
+font-weight: 700;
+}
+
+.subparts div > p {
+  position: relative;
+  top: -13px;
+  color: #1c1d1f;
+  font-size: 14px;
+  font-weight: 100;
+  font-size: smaller;
+}
+
+
+    </style>
 </head>
 <body>
-    
+    <div id="main-content">
+        <h2>Top Categories</h2>
+        <div id="topcourse">
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="" />
+            <span>Design</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="" />
+            <span>Development</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" alt="" />
+            <span>Marketing</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="" />
+            <span>IT and Software</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg" alt="" />
+            <span>Personal Development</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt="" />
+            <span>Business</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg" alt="" />
+            <span>Photography</span>
+          </div>
+          <div class="subcourses">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt="" />
+            <span>Music</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content-2">
+      <h2>Featured topics by category</h2>
+      <div id="linktocourses">
+        <div class="subparts">
+          <h2>Development</h2>
+          <div>
+            <a href="#">Python</a>
+            <p>27,538,900 students</p>
+          </div>
+          <div>
+            <a href="#">Web development</a>
+            <p>9,149,403 students</p>
+          </div>
+          <div>
+            <a href="#">Machine Learning</a>
+            <p>5,592,848 students</p>
+          </div>
+          <div>
+            <button>Explore More Topics</button>
+          </div>
+        </div>
+        <div class="subparts">
+          <h2>Business</h2>
+          <div>
+            <a href="#">Financial Analysis</a>
+            <p>1,033,843 students</p>
+          </div>
+          <div>
+            <a href="#">SQL</a>
+            <p>4,033,751 students</p>
+          </div>
+          <div>
+            <a href="#">PMP</a>
+            <p>1,351,586 students</p>
+          </div>
+        </div>
+        <div class="subparts">
+          <h2>IT and software</h2>
+          <div>
+            <a href="#">AWS Certification</a>
+            <p>4,229,422 students</p>
+          </div>
+          <div>
+            <a href="#">Ethical Hacking</a>
+            <p>8,584,761 students</p>
+          </div>
+          <div>
+            <a href="#">Cyber Security</a>
+            <p>3,082,734 students</p>
+          </div>
+        </div>
+        <div class="subparts">
+          <h2>Design</h2>
+          <div>
+            <a href="#">Photoshop</a>
+            <p>9,327,671 students</p>
+          </div>
+          <div>
+            <a href="#">Graphic Designing</a>
+            <p>2,714,156 students</p>
+          </div>
+          <div>
+            <a href="#">Drawing</a>
+            <p>2,125,063 students</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
