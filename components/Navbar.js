@@ -3,7 +3,55 @@ const navbar = () => {
      <div>
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
-     <a href=""><div>Categories</div></a>
+     <div id="Categories">
+     <p>Categories</p>
+     <div id="hoverDiv">
+     <div id="Devlopment">
+     Devlopment
+     <i class="fa-solid fa-angle-right"></i>
+     <div id="devlopHover">
+     <div>Devlopment
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Business
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Finance & Accounting
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>IT & Software
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Office Productivity
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Personal Devlopment
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Design
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Marketing
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Health & Fitness
+         <i class="fa-solid fa-angle-right"></i></div>
+         <div>Music
+         <i class="fa-solid fa-angle-right"></i></div>
+         </div>
+       </div>
+     <div>Business
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Finance & Accounting
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>IT & Software
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Office Productivity
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Personal Devlopment
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Design
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Marketing
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Health & Fitness
+     <i class="fa-solid fa-angle-right"></i></div>
+     <div>Music
+     <i class="fa-solid fa-angle-right"></i></div>
+     </div>
+     </div>
      <div id="searchbar">
          <i class="fa-solid fa-magnifying-glass"></i>
          <input type="text" placeholder="Search for anything">

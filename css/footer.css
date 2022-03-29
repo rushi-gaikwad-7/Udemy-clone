@@ -13,6 +13,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #3e4143;
+    padding: 10px 0px;
 
 }
 #fstBox>div:last-child {
@@ -47,6 +49,9 @@ body{
     border: 1px solid white;
     height: 40px;
 }
+#mainDiv i{
+    margin-right: 10px;
+}
 #a {
     grid-area: A;
 }
@@ -64,7 +69,4 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-hr{
-    border-width: 1px;
 }

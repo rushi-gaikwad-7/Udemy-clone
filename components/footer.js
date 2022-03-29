@@ -11,7 +11,6 @@ const footer=()=>{
         Teach on Udemy
     </div>
 </div>
-<hr>
 <div id="secndBox">
 <div>
     <h3>Top companies choose Udemy Business to build in-demand career skills.</h3>
@@ -24,7 +23,6 @@ const footer=()=>{
 <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="">
 </div>
 </div>
-<hr>
      <div id="mainDiv">
      <div>
      <div id="a">
