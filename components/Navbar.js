@@ -1,3 +1,5 @@
+
+
 const navbar = () => {
     return `
      <div>
@@ -86,5 +88,5 @@ const navbar = () => {
      </div>
      `
 }
-
 export default navbar;
+
