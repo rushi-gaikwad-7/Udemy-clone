@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
     <title>www.udemy.com</title>
 </head>
 
 <body>
 
-    
+
     <div id="navbar"></div>
     <div id="adDiv">
         <div>
@@ -43,13 +44,17 @@
                 You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that
                 will
                 appeal to....</p>
-                <div>Explore Python</div>
-                <div class="Slider"></div>
+            <div>Explore Python</div>
+            <div id="pythonslider">
+                <div><h2 id="prev5">&#8249</h2></div>   
+                <div id = pythonsliderbox></div>
+                <div><h2 id="next5">&#8250</h2></div>
+               </div>
         </div>
     </div>
     <div id="midDiv">
         <div>
-          <img src="https://cdn-icons-png.flaticon.com/512/49/49669.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/49/49669.png" alt="">
             <h4>Learn in-demand skills with over 183,000 video courses</h4>
         </div>
         <div>
@@ -57,14 +62,14 @@
             <h4>Choose courses taught by real-world experts</h4>
         </div>
         <div>
-           <img src="https://cdn-icons-png.flaticon.com/512/262/262047.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/262/262047.png" alt="">
             <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
         </div>
     </div>
     <div id="pythonDiv">
         <div>
             <h2>Students are viewing</h2>
-                <div class="Slider"></div>
+            <div class="Slider"></div>
         </div>
     </div>
     <h2>Top categories</h2>
@@ -191,4 +196,7 @@
     import navbar from "/components/navbar.js"
     import footer from "/components/footer.js"
     header.innerHTML = navbar(); footerbar.innerHTML = footer();
+</script>
+<script type="module"  src="/scripts/slider.js">
+
 </script>

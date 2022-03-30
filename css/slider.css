@@ -1,0 +1,51 @@
+#businesssliderbox,#studentsliderbox,#jssliderbox,#topjssliderbox,#pythonsliderbox{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px;
+    margin: 50px auto;
+}
+#businessslider,#stundentviewslider,#javascriptslider,#topjsslider,#pythonslider{
+    display: flex;
+    align-items: center;
+    border:1px solid black;
+    
+}
+#businessslider>div>h2,#stundentviewslider>div>h2,#javascriptslider>div>h2,#topjsslider>div>h2,#pythonslider>div>h2{
+    color:white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid grey;
+}
+#businesssliderbox>div,#studentsliderbox>div,#jssliderbox>div,#topjssliderbox>div,#pythonsliderbox>div{
+    display: none;
+}
+#ratingpic{
+    width: 60px;
+    height: 20px;
+}
+#slidercontent>div{
+    display: flex;
+    align-items: center;
+    margin: -35px auto;
+}
+#slidercontent>div>h4{
+    color:#b71;
+    font-size: 18px;
+}
+#slidercontent>div>s{
+    margin: auto 10px;
+    color: grey;
+    font-size: 14px;
+}
+#slidercontent>p{
+    margin-top: -15px;
+    color: grey;
+    font-size: 13px;
+}
+#slidercontent>div>p{
+    color:grey;
+    font-size: 14px;
+}
