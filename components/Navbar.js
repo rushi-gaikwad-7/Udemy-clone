@@ -1,7 +1,11 @@
 
+   import Devlopment from "/scripts/categories.js";
+
+  var div1=Devlopment();
 
 const navbar = () => {
-    return `
+  
+   return`
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
      <div id="Categories">
@@ -10,28 +14,7 @@ const navbar = () => {
      <div id="Devlopment">
      Devlopment
      <i class="fa-solid fa-angle-right"></i>
-     <div id="devlopHover">
-     <div> Web Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Data Science
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Mobile Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Programming l=Languages
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Game Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Database Design & Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Testing
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Engineering
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Devlopment Tools
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>No-code Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         </div>
+     <div id="devlopHover">${div1}</div>
        </div>
      <div>Business
      <i class="fa-solid fa-angle-right"></i></div>
@@ -57,7 +40,12 @@ const navbar = () => {
          <i class="fa-solid fa-magnifying-glass"></i>
          <input type="text" placeholder="Search for anything">
      </div>
-     <a href=""><div>Udemy Business</div></a>
+     <a href=""><div id="Business">Udemy Business
+     <div id="bhoverDiv">
+        <h4>Get your team access to over 6,000 top Udemy courses, anytime, anywhere.</h4>
+        <div>Try Udemy for Business</div>
+    </div>
+    </div></a>
      <a href=""><div>Teach on Udemy</div></a>
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">

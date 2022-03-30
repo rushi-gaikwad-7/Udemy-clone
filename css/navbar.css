@@ -88,10 +88,10 @@ i {
     background: #fff;
     border-left: 1px solid #d1d7dc;
 }
-#Categories:hover #hoverDiv {
+#Categories:hover #hoverDiv,#Business:hover #bhoverDiv{
     display: flex;
     flex-direction: column;
-    margin-top:3.5%;
+    margin-top:3.0%;
     visibility: visible;
     opacity: 1;
     color: purple;
@@ -119,4 +119,27 @@ i {
 }
 #hoverDiv i,#devlopHover i{
     font-size:11px ;
+}
+#bhoverDiv{
+    box-sizing: border-box;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    width:18%;
+    position:absolute;
+    height:200px;
+    background: #fff;
+    visibility: hidden;
+    border-left: 1px solid #d1d7dc;
+}
+#bhoverDiv>h4{
+    color: black;
+    text-align: center;
+}
+#bhoverDiv>div{
+text-align: center;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
 }
