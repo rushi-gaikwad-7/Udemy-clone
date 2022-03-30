@@ -1,61 +1,40 @@
 
 
-const webdevlopment= ()=>{
 
-    return`
-    <div> Web Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Data Science
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Mobile Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Programming l=Languages
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Game Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Database Design & Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Testing
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Engineering
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Devlopment Tools
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>No-code Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>`    
+const Devlopment=(dataarr,subdata)=>{
+
+   let box=document.createElement('div');
+   dataarr.forEach(data => {
+   let box1=document.createElement('div');
+   box1.id="web";
+   let subbox=document.createElement('div');
+   subbox.id="webdevlopHover";
+   subbox.innerHTML=`${subDevlopment(subdata)}`;
+   let  name = document.createElement('p');
+   name.innerText=data;
+   let icon=document.createElement('i');
+   icon.innerHTML=`<i class="fa-solid fa-angle-right"></i>`;
+   box1.append(name,icon,subbox)
+   box.append(box1);
+    
+});
+    return box.innerHTML;  
 }
 
+const subDevlopment=(dataarr)=>{
 
- const Devlopment=()=>{
-
-    
-
-    let div1=webdevlopment();
-    
-
-
-    return`
-    <div> Web Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div id="devlopHover">${div1}</div>
-        <div>Data Science
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Mobile Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Programming l=Languages
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Game Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Database Design & Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Testing
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Engineering
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>Softwere Devlopment Tools
-        <i class="fa-solid fa-angle-right"></i></div>
-        <div>No-code Devlopment
-        <i class="fa-solid fa-angle-right"></i></div>`
+    let box=document.createElement('div');
+    dataarr.forEach(data => {
+    let box1=document.createElement('div');
+    box1.id="web";
+    let  name = document.createElement('p');
+    name.innerText=data;
+    let icon=document.createElement('i');
+    icon.innerHTML=`<i class="fa-solid fa-angle-right"></i>`;
+    box1.append(name,icon)
+    box.append(box1);
+     
+ });
+     return box.innerHTML;  
  }
-
  export default Devlopment;

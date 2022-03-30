@@ -4,7 +4,7 @@ const footer=()=>{
     return`
 <div id="secndBox">
 <div>
-    <h3>Top companies choose Udemy Business to build in-demand career skills.</h3>
+    <h3>Top companies choose <b> Udemy Business </b> to build in-demand career skills.</h3>
 </div>
 <div>
 <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="">

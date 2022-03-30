@@ -1,25 +1,31 @@
 
+   import {Developmentdata,webdata,businessdata,Financedata} from "/data/categoriesdata.js"
+   
+   let devlopdata=Developmentdata();
+   let subwebdata=webdata();
+   let businesdata=businessdata();
+   let Fdata=Financedata();
+console.log(Fdata);
    import Devlopment from "/scripts/categories.js";
-
-  var div1=Devlopment();
-
-const navbar = () => {
-  
+   const navbar = () => {
    return`
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
      <div id="Categories">
      <p>Categories</p>
      <div id="hoverDiv">
-     <div id="Devlopment">
-     Devlopment
+     <div id="Devlopment">Devlopment
      <i class="fa-solid fa-angle-right"></i>
-     <div id="devlopHover">${div1}</div>
-       </div>
-     <div>Business
-     <i class="fa-solid fa-angle-right"></i></div>
-     <div>Finance & Accounting
-     <i class="fa-solid fa-angle-right"></i></div>
+     <div id="devlopHover">${Devlopment(devlopdata,subwebdata)}</div>
+     </div>
+     <div id="Bbox">Business
+     <i class="fa-solid fa-angle-right"></i>
+     <div id="BHover">${Devlopment(businesdata,subwebdata)}</div>
+     </div>
+     <div id="Fbox">Finance & Accounting
+     <i class="fa-solid fa-angle-right"></i>
+     <div id="FHover">${Devlopment(Fdata,subwebdata)}</div>
+     </div>
      <div>IT & Software
      <i class="fa-solid fa-angle-right"></i></div>
      <div>Office Productivity
@@ -46,7 +52,11 @@ const navbar = () => {
         <div>Try Udemy for Business</div>
     </div>
     </div></a>
-     <a href=""><div>Teach on Udemy</div></a>
+     <a href=""><div id="tech">Teach on Udemy
+     <div id="thoverDiv">
+     <h4>Turn what you know into an opportunity and reach millions around the world.</h4>
+     <div>Learn more</div>
+ </div></div></a>
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
      </div>
