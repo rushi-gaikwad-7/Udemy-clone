@@ -14,7 +14,6 @@
 
 <body>
     <div id="navbar"></div>
-
     <div id="adDiv">
         <div>
             <h1>Dream big</h1>
@@ -23,19 +22,49 @@
     </div>
     <h1>A broad selection of courses</h1>
     <p>Choose from 183,000 online video courses with new additions published every month</p>
-    <div id="notifyDiv">
-        <p>Training 5 or more people? Get your team access to Udemy's top 6,000+ courses</p>
+    <div id="topCourse">
+        <h4>Python</h4>
+        <h4>Excel</h4>
+        <h4>Web Development</h4>
+        <h4>JavaScript</h4>
+        <h4>Data Science</h4>
+        <h4>AWS Certification</h4>
+        <h4>Drawing</h4>
+    </div>
+    <div id="pythonDiv">
         <div>
-            <div>Get Udemy Business</div>
-            <div>Dismiss</div>
+            <h2>Expand your career opportunities with Python</h2>
+            <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language.
+                Its
+                simple syntax and readability makes Python perfect for Flask, Django, data science, and machine
+                learning.
+                You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that
+                will
+                appeal to....</p>
+                <div>Explore Python</div>
+                <div class="Slider"></div>
         </div>
     </div>
-    <div id="mainCourseDiv">
-        <h1>What to learn next</h1>
-        <h2>Top courses in Development</h2>
+    <div id="midDiv">
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/49/49669.png" alt="">
+            <h4>Learn in-demand skills with over 183,000 video courses</h4>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/40/40403.png" alt="">
+            <h4>Choose courses taught by real-world experts</h4>
+        </div>
+        <div>
+           <img src="https://cdn-icons-png.flaticon.com/512/262/262047.png" alt="">
+            <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
+        </div>
     </div>
-    
-
+    <div id="pythonDiv">
+        <div>
+            <h2>Students are viewing</h2>
+                <div class="Slider"></div>
+        </div>
+    </div>
     <h2>Top categories</h2>
     <div id="categories">
         <div>
@@ -116,8 +145,9 @@
         <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="">
         <div>
             <h1>Become an instructor</h1>
-            <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
-            <div>Start Teaching today</div>
+            <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to
+                teach what you love.</p>
+            <div class="unic">Start Teaching today</div>
         </div>
     </div>
     <div id="company">
@@ -131,8 +161,9 @@
     <div class="udemyB">
         <div>
             <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="">
-            <p>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
-            <div id="unic">Get Udemy Business</div>
+            <p>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across
+                business, tech, design, and more.</p>
+            <div class="unic">Get Udemy Business</div>
         </div>
         <img src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" alt="">
     </div>
@@ -141,7 +172,8 @@
         <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" alt="">
         <div>
             <h1>Transform your life through education</h1>
-            <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.
+            <p>Learners around the world are launching new careers, advancing in their fields, and enriching their
+                lives.
             </p>
             <div>Find out how</div>
         </div>
@@ -152,9 +184,9 @@
 </html>
 
 <script type="module">
-    let header = document.querySelector("#navbar"); 
-    let footerbar = document.querySelector("#footer"); 
-    import navbar from "/components/navbar.js" 
-    import footer from "/components/footer.js" 
+    let header = document.querySelector("#navbar");
+    let footerbar = document.querySelector("#footer");
+    import navbar from "/components/navbar.js"
+    import footer from "/components/footer.js"
     header.innerHTML = navbar(); footerbar.innerHTML = footer();
 </script>

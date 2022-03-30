@@ -1,17 +1,31 @@
 body {
     font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 }
+
 #navbar {
-    width: 100%;
-    height: 65px;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: border-box;
-    padding: 0px 20px;
+    padding: 0px 25px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     color: black;
+}
+#navbar>div:first-child {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
     border-bottom: 1px solid #d1d7dc;
+}
+#navbar>div:last-child {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 #mainlogo {
     width: 90px;
@@ -56,19 +70,8 @@ i {
 #bag>img {
     width: 22px;
 }
-#login,#signup,#lng{
-    font-weight: bold;
-    border: 1px solid;
-    padding: 10px 12px;
-}
-#signup{
-    background-color: black;
-    color: white;
-}
-
 #Categories {
     display: flex;
-    font-size: 14px;
 }
 #hoverDiv {
     display: flex;

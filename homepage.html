@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homenavebar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <title>www.udemy.com</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="adDiv">
+        <div>
+            <h1>Dream big</h1>
+            <p>Find a course to help you reach where you want to go. Starting at ₹455 through March 31.</p>
+        </div>
+    </div>
+    <div id="notifyDiv">
+        <p>Training 5 or more people? Get your team access to Udemy's top 6,000+ courses</p>
+        <div>
+            <div>Get Udemy Business</div>
+            <div>Dismiss</div>
+        </div>
+    </div>
+    <h1>What to learn next</h1>
+   <div id="slides">
+    <div>
+        <h3>Because you viewed “Web Design for Beginners: Real World Coding in HTML & CSS</h3>
+        <div id="viewSlider"></div>
+    </div>
+    <div>
+        <h3>Because you searched for “python”</h3>
+        <div id="pythonSlider"></div>
+    </div>
+   </div>
+    <div id="midDiv">
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/49/49669.png" alt="">
+            <h4>Learn in-demand skills with over 183,000 video courses</h4>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/40/40403.png" alt="">
+            <h4>Choose courses taught by real-world experts</h4>
+        </div>
+        <div>
+           <img src="https://cdn-icons-png.flaticon.com/512/262/262047.png" alt="">
+            <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
+        </div>
+    </div>
+    <div id="footer"> </div>
+</body>
+
+</html>
+
+<script type="module">
+    let header = document.querySelector("#navbar"); 
+    let footerbar = document.querySelector("#footer"); 
+    import homenavbar from "/components/homenavbar.js" 
+    import homefooter from "/components/homefooter.js" 
+    header.innerHTML = homenavbar(); 
+    footerbar.innerHTML = homefooter();
+</script>

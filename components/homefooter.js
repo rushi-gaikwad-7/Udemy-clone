@@ -1,7 +1,16 @@
 
 
-const footer=()=>{
-    return`
+const homefooter=()=>{
+    return ` 
+    <div id="fstBox">
+    <div>
+        <h3>Teach the world online</h3>
+        <p>Create an online video course, reach students across the globe, and earn money</p>
+    </div>
+    <div>
+        Teach on Udemy
+    </div>
+</div>
 <div id="secndBox">
 <div>
     <h3>Top companies choose Udemy Business to build in-demand career skills.</h3>
@@ -49,4 +58,4 @@ const footer=()=>{
         </div>`
 }
 
-export default footer;
+export default homefooter;
