@@ -49,7 +49,7 @@
                 <div><h2 id="prev5">&#8249</h2></div>   
                 <div id = pythonsliderbox></div>
                 <div><h2 id="next5">&#8250</h2></div>
-               </div>
+            </div>
         </div>
     </div>
     <div id="midDiv">
@@ -196,7 +196,52 @@
     import navbar from "/components/navbar.js"
     import footer from "/components/footer.js"
     header.innerHTML = navbar(); footerbar.innerHTML = footer();
-</script>
-<script type="module"  src="/scripts/slider.js">
+
+
+
+
+    import appendslider from './scripts/appendslider.js';
+    import doSlide from './scripts/slidercode.js';
+
+
+
+
+    function makeData(url,t,i,r,p,ts,st){
+    this.image= url;
+    this.title= t;
+    this.instructor=i;
+    this.rating=r;
+    this.price=p;
+    this.totalsale=ts;
+    this.stprice=st;
+    this.destitle=`JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.`;
+    this.desop1= `Learn to write JavaScript functions`;
+    this.desop2= `Code your own apps and games in JavaScript for Mac, Windows, or Linux, for beginners of all ages`;
+    this.desop3= `Become job-ready by understanding how JavaScript really works behind the scenes`
+}
+    
+let python1= new makeData(`https://img-b.udemycdn.com/course/240x135/2776760_f176_9.jpg`,`100 Days of Code: The Complete Python `,`Dr angella Yu`,4.5,455,`(634674)`,6723)
+let python2= new makeData(`https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg`,`2022 Complete Python Bootcamp `,`Jose Portilla`,4.6,455,`(37543)`,7089)
+let python3= new makeData(`https://img-c.udemycdn.com/course/240x135/629302_8a2d_2.jpg`,`Learn Python Programming Masterclass`,`Tim Buchalka Jean-Paul`,4.6,455,`(94674)`,8934)
+let python4= new makeData(`https://img-c.udemycdn.com/course/240x135/2473048_8255_5.jpg`,`Complete Python zero To Mastery `,`Andrei  Neagoie`,4.7,455,`(38274)`,8442)
+let python5= new makeData(`https://img-b.udemycdn.com/course/240x135/692188_9da7_26.jpg`,`The Python Mega Course 2022`,`Ardit Sulcie`,4.6,455,`(734674)`,7937)
+let python6= new makeData(`https://img-c.udemycdn.com/course/240x135/1547268_1b84_3.jpg`,`The Complete Python `,`Rob Parcival`,4.6,455,`(53674)`,4642)
+let python7= new makeData(`https://img-b.udemycdn.com/course/240x135/903744_8eb2.jpg`,`Python For Data Science And Machine Learing`,`Jose portilla`,4.6,455,`(23784)`,3657)
+let python8= new makeData(`https://img-c.udemycdn.com/course/240x135/1386294_cf10_3.jpg`,`Python for  Beginners`,`Zyan Kahna`,4.5,455,`(53464)`,4749)
+let python9= new makeData(`https://img-c.udemycdn.com/course/240x135/903378_f32d_7.jpg`,`The Python Bibble, Everything You need to Program`,`Josh wella`,4.7,455,`(234424)`,4649)
+let python10= new makeData(`https://img-b.udemycdn.com/course/240x135/543600_64d1_4.jpg`,`Automate the boaring stuff`,`Al Sweigart`,4.5,455,`(389544)`,4754)
+
+let pythonCourses=[python1,python2,python3,python4,python5,python6,python7,python8,python9,python10]
+
+let pythonsliderbox= document.querySelector("#pythonsliderbox");
+appendslider(pythonCourses,pythonsliderbox)
+
+var items5= document.querySelectorAll("#pythonsliderbox>div");
+doSlide(items5,"prev5","next5")
+
+
+
+
+
 
 </script>

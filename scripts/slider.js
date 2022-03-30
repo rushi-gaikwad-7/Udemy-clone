@@ -17,11 +17,11 @@ function makeData(url,t,i,r,p,ts,st){
 
 
 
-import appendslider from "/scripts/appendslider";
+import appendslider from '/appendslider.js';
 
-console.log(appendslider())
+console.log(appendslider)
 
-import doSlide from "/scripts/slidercode";
+import doSlide from '/slidercode.js';
 
 
 
