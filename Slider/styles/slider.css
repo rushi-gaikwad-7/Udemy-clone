@@ -7,7 +7,6 @@
 #businessslider,#stundentviewslider,#javascriptslider,#topjsslider,#pythonslider{
     display: flex;
     align-items: center;
-    border:1px solid black;
     
 }
 #businessslider>div>h2,#stundentviewslider>div>h2,#javascriptslider>div>h2,#topjsslider>div>h2,#pythonslider>div>h2{
