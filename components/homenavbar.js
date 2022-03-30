@@ -1,43 +1,32 @@
 
 
+ import {Developmentdata,webdata,businessdata,Financedata} from "/data/categoriesdata.js"
+   
+ let devlopdata=Developmentdata();
+ let subwebdata=webdata();
+ let businesdata=businessdata();
+ let Fdata=Financedata();
+ import Devlopment from "/scripts/categories.js";
+
 const homenavbar = () => {
     return `
      <div>
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
-     <div id="Categories">
-     <p>Categories</p>
+     <div id="Categories">Categories
      <div id="hoverDiv">
-     <div id="Devlopment">
-     Devlopment
+     <div id="Devlopment">Devlopment
      <i class="fa-solid fa-angle-right"></i>
-     <div id="devlopHover">
-     <div> Web Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Data Science
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Mobile Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Programming l=Languages
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Game Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Database Design & Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Testing
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Engineering
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>Softwere Devlopment Tools
-         <i class="fa-solid fa-angle-right"></i></div>
-         <div>No-code Devlopment
-         <i class="fa-solid fa-angle-right"></i></div>
-         </div>
-       </div>
-     <div>Business
-     <i class="fa-solid fa-angle-right"></i></div>
-     <div>Finance & Accounting
-     <i class="fa-solid fa-angle-right"></i></div>
+     <div id="devlopHover">${Devlopment(devlopdata,subwebdata)}</div>
+     </div>
+     <div id="Bbox">Business
+     <i class="fa-solid fa-angle-right"></i>
+     <div id="BHover">${Devlopment(businesdata,subwebdata)}</div>
+     </div>
+     <div id="Fbox">Finance & Accounting
+     <i class="fa-solid fa-angle-right"></i>
+     <div id="FHover">${Devlopment(Fdata,subwebdata)}</div>
+     </div>
      <div>IT & Software
      <i class="fa-solid fa-angle-right"></i></div>
      <div>Office Productivity
@@ -58,8 +47,17 @@ const homenavbar = () => {
          <i class="fa-solid fa-magnifying-glass"></i>
          <input type="text" placeholder="Search for anything">
      </div>
-     <a href=""><div>Udemy Business</div></a>
-     <a href=""><div>Teach on Udemy</div></a>
+     <a href=""><div id="Business">Udemy Business
+     <div id="bhoverDiv">
+        <h4>Get your team access to over 6,000 top Udemy courses, anytime, anywhere.</h4>
+        <div>Try Udemy for Business</div>
+    </div>
+    </div></a>
+     <a href=""><div id="tech">Teach on Udemy
+     <div id="thoverDiv">
+     <h4>Turn what you know into an opportunity and reach millions around the world.</h4>
+     <div>Learn more</div>
+ </div></div></a>
      <a href=""><div>My learing</div></a>
      <div id="wishlist">
      <i class="fa-regular fa-heart"></i>
@@ -70,8 +68,7 @@ const homenavbar = () => {
      <div id="bellicon">
      <i class="fa-regular fa-bell"></i>
      </div>
-     <div id="profile">
-     <i class="fa-regular fa-user"></i>
+     <div id="profile">RG
      </div>
      </div>
      <div>

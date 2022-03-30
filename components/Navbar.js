@@ -11,8 +11,7 @@ console.log(Fdata);
    return`
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
-     <div id="Categories">
-     <p>Categories</p>
+     <div id="Categories">Categories
      <div id="hoverDiv">
      <div id="Devlopment">Devlopment
      <i class="fa-solid fa-angle-right"></i>
