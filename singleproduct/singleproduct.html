@@ -47,7 +47,7 @@
        background-color: aliceblue;
        margin: 50px;
        color: #222;
-       
+         
        }
        #imgbox>h1,#imgbox>p,#imgbox>div,#imgbox>h4{
            margin: 20px;
@@ -179,7 +179,7 @@
 <script>
     let product = JSON.parse(localStorage.getItem("singleproduct"));
     console.log(product);
-    
+    let cartproduct=JSON.parse(localStorage.getItem("cartproducts"))||[]
     let productbox= document.querySelector("#productbox");
     displayproduct(product);
     function displayproduct(data){
@@ -229,6 +229,11 @@
             let btn1=document.createElement("button");
             btn1.innerText=`Add to cart`
             btn1.setAttribute("id","addtocart")
+            btn1.addEventListener("click",()=>{
+               cartproduct.push(el);
+               localStorage.setItem("cartproducts",JSON.stringify(cartproduct))
+               console.log(cartproduct)
+            })
             let btn2= document.createElement("button");
             btn2.innerHTML=`<i class="fa-solid fa-heart"></i>`;
             btnbox.append(btn1,btn2);
