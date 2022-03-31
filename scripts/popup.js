@@ -1,6 +1,8 @@
 
 
 
+const popdata= ()=>{
+
 
 let dataarr = [
     {
@@ -149,6 +151,10 @@ let dataarr = [
     }
   ];
 
+  return popdata;
+
+}
+
 const Devlop = (data) => {
 console.log(data)
         let box = document.createElement('div');
@@ -161,4 +167,4 @@ console.log(data)
     return box.innerHTML;
 }
 
-export default Devlop ;
+export {Devlop,popdata}  ;
