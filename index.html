@@ -71,9 +71,9 @@
         <div id="stundentview">
             <h2>Students are viewing</h2>
                <div id="stundentviewslider">
-                <div id="prev5"><i class="fa-solid fa-circle-chevron-left"></i></div>  
+                <div id="prev2"><i class="fa-solid fa-circle-chevron-left"></i></div>  
                 <div id ="studentsliderbox"></div>
-                <div id="next5"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                <div id="next2"><i class="fa-solid fa-circle-chevron-right"></i></div>
                </div>
         </div>
         <div id="businessDiv">
@@ -82,7 +82,7 @@
                 <div><h2 id="prev">&#8249</h2></div>   
                 <div id = "businesssliderbox"></div>
                 <div><h2 id="next">&#8250</h2></div>
-               </div>   
+            </div>   
         </div>
     <h2>Top categories</h2>
     <div id="categories">
@@ -265,6 +265,7 @@ let studentSlidebox= document.querySelector("#studentsliderbox");
 appendslider(csCourses,studentSlidebox);
 
 var items2= document.querySelectorAll("#studentsliderbox>div");
+
 doSlide(items2,"prev2","next2")
 
 
@@ -281,11 +282,12 @@ let obj9= new makeData(`https://img-b.udemycdn.com/course/240x135/33949_3a7e_5.j
 let obj10= new makeData(`https://img-b.udemycdn.com/course/240x135/34268_4bc5_16.jpg`,`Qms Auditor`,`Sandeep Kumar`,4.6,455,`(34674)`,5082)
 
 let BussinesCourses=[obj1,obj2,obj3,obj4,obj5,obj6,obj7,obj8,obj9,obj10];
-
+console.log(BussinesCourses)
 let bussinesslidebox = document.querySelector("#businesssliderbox");
 appendslider(BussinesCourses,bussinesslidebox)
 
 var items= document.querySelectorAll("#businesssliderbox>div");
+
 doSlide(items,"prev","next")
 
 </script>
