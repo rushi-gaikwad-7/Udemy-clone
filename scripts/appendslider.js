@@ -150,10 +150,11 @@ let dataarr = [
 const Devlop = (data) => {
 console.log(data)
         let box = document.createElement('div');
-        let name = document.createElement('p');
+        let name = document.createElement('h2');
         name.innerText = data.course_name;
         let discrip = document.createElement('p');
-        let updated = document.createElement('p');
+        discrip.innerText = data.courseHeading;
+        let updated = document.createElement('h4');
         updated.innerText = data.updatedDate;
         box.append(name,discrip,updated)
     return box.innerHTML;
