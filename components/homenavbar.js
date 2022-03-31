@@ -6,7 +6,7 @@
  let subwebdata=webdata();
  let businesdata=businessdata();
  let Fdata=Financedata();
- import Devlopment from "/scripts/categories.js";
+ import {Devlopment,Devlop} from "/scripts/categories.js";
 
 const homenavbar = () => {
     return `
@@ -58,7 +58,11 @@ const homenavbar = () => {
      <h4>Turn what you know into an opportunity and reach millions around the world.</h4>
      <div>Learn more</div>
  </div></div></a>
-     <a href=""><div>My learing</div></a>
+     <a href=""><div id="learing">My learing
+     <div id="LrhoverDiv">
+     <h4>Start learning from over 183,000 courses today.</h4>
+     <div>Browse now</div>
+ </div></div></a>
      <div id="wishlist">
      <i class="fa-regular fa-heart"></i>
      </div>
@@ -72,7 +76,8 @@ const homenavbar = () => {
      </div>
      </div>
      <div>
-     <p>Devlopment</p>
+     <div id="dDiv">Devlopment
+     <div id="dhover">${Devlop(devlopdata)}</div></div>
      <p>Business</p>
      <p>Finance & Accounting</p>
      <p>IT & Software</p>

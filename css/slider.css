@@ -1,51 +1,71 @@
-#businesssliderbox,#studentsliderbox,#jssliderbox,#topjssliderbox,#pythonsliderbox{
+#businesssliderbox,
+#studentsliderbox,
+#jssliderbox,
+#topjssliderbox,
+#pythonsliderbox {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap:10px;
-    margin: 50px auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap:8px;
+    margin-left: 10px;
 }
-#businessslider,#stundentviewslider,#javascriptslider,#topjsslider,#pythonslider{
+#businessslider,
+#stundentviewslider,
+#javascriptslider,
+#topjsslider,
+#pythonslider {
     display: flex;
     align-items: center;
-    border:1px solid black;
-    
 }
-#businessslider>div>h2,#stundentviewslider>div>h2,#javascriptslider>div>h2,#topjsslider>div>h2,#pythonslider>div>h2{
-    color:white;
-    background-color: black;
-    border-radius: 50%;
-    font-size: 40px;
-    width: 30px;
-    text-align: center;
-    border: 1px solid grey;
+
+#businessslider>div>i,
+#stundentviewslider>div>i,
+#javascriptslider>div>i,
+#topjsslider>div>i,
+#pythonslider>div>i {
+    font-size: 30px;
 }
-#businesssliderbox>div,#studentsliderbox>div,#jssliderbox>div,#topjssliderbox>div,#pythonsliderbox>div{
+
+#businesssliderbox>div,
+#studentsliderbox>div,
+#jssliderbox>div,
+#topjssliderbox>div,
+#pythonsliderbox>div {
     display: none;
 }
-#ratingpic{
-    width: 60px;
-    height: 20px;
+
+#ratingpic {
+    width: 70px;
+    height: 15px;
+    margin-left:5px;
 }
-#slidercontent>div{
+
+#slidercontent>div {
+    width: 85%;
+    line-height: 1;
+    margin-top: -15px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#slidercontent>div>div {
+    width: 70%;
+    height: 30px;
     display: flex;
     align-items: center;
-    margin: -35px auto;
+    justify-content: space-between;
 }
-#slidercontent>div>h4{
-    color:#b71;
-    font-size: 18px;
-}
-#slidercontent>div>s{
-    margin: auto 10px;
+#slidercontent>div>div s {
     color: grey;
-    font-size: 14px;
+    margin-right: 35px;
 }
-#slidercontent>p{
-    margin-top: -15px;
-    color: grey;
-    font-size: 13px;
+#slidercontent>div p{
+    font-size: 12px;
 }
-#slidercontent>div>p{
-    color:grey;
-    font-size: 14px;
+#slidercontent>div h5{
+    font-size: 15px;
+    color: goldenrod;
+}
+img+div>h4+p{
+   margin-top: -12px;
+   margin-bottom: 0px;
 }

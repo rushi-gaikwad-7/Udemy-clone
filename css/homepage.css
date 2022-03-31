@@ -145,10 +145,18 @@ body>h2,body>h1,body>p{
 #topCourse>h4:hover{
     color: black;
 }
-#pythonDiv{
+#pythonBox{
+    border: 1px solid #d1d7dc;
     width: 90%;
     margin: auto;
-    border: 1px solid #d1d7dc;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+#stundentview,#businessDiv{
+    width: 90%;
+    margin: auto;
+}
+#pythonDiv{
     box-sizing: border-box;
     padding: 20px 40px;
 }

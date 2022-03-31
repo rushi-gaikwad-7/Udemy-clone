@@ -2,14 +2,15 @@ function appendslider(data,parent){
     parent.innerHTMl="";
     data.map((el)=>{
         let box = document.createElement("div");
+        let subbox = document.createElement("div");
         box.setAttribute("id","slidercontent")
         let courseimage= document.createElement("img");
         courseimage.src= el.image;
-        let title=  document.createElement("h3");
+        let title=  document.createElement("h4");
         title.innerText=el.title;
         let instructor= document.createElement("p");
         instructor.innerText=el.instructor;
-        let rating= document.createElement("h4");
+        let rating= document.createElement("h5");
         rating.innerText=el.rating;
         let ratingdiv= document.createElement('div');
         let ratingqty= document.createElement("p");
@@ -25,12 +26,13 @@ function appendslider(data,parent){
         }
         ratingdiv.append(rating,rating_img,ratingqty);
         let pricebox= document.createElement("div");
-        let price= document.createElement("h3");
-        price.innerText="Rs"+el.price;
+        let price= document.createElement("h4");
+        price.innerText="Rs "+el.price;
         let stprice= document.createElement("s");
         stprice.innerText="Rs"+el.stprice;
         pricebox.append(price,stprice)
-        box.append(courseimage,title,instructor,ratingdiv,pricebox);
+        subbox.append(title,instructor,ratingdiv,pricebox)
+        box.append(courseimage,subbox);
         parent.append(box);
     })
  }

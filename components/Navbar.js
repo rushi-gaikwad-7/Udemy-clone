@@ -6,7 +6,7 @@
    let businesdata=businessdata();
    let Fdata=Financedata();
 console.log(Fdata);
-   import Devlopment from "/scripts/categories.js";
+   import {Devlopment,Devlop} from "/scripts/categories.js";
    const navbar = () => {
    return`
      <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"

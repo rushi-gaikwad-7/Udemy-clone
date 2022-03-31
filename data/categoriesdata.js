@@ -1,10 +1,12 @@
-const Developmentdata = () => {
+
+
+ const Developmentdata = () => {
     let data = ["Web development", "Data Science", "Mobile Development", "Programming Languages", "Game Development", "Database Design & Development",
         "Software Testing", "Software Engineering", "Softwere Development Tools", "No-Code Development"
     ]
     return data;
 }
-const webdata=()=>{
+  const webdata=()=>{
 
     let data = ["JavaScript","React","CSS","Angular","Node.js","HTML5","PHP","Django"]
     return data;
@@ -18,7 +20,6 @@ const Financedata = () => {
     let data = ["Accounting","Bookkeeping","Finance Accounting","Financial Statement","Tally.Erp","Xero","Cost Accounting"]
      return data;
 }
-
 
 
 export {Developmentdata,webdata,businessdata,Financedata}; 

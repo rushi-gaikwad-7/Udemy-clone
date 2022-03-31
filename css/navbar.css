@@ -66,8 +66,11 @@ i {
     color: white;
 }
 #Categories {
-    display: flex;
-    font-size: 14px;
+    height: 100%;
+    padding: 25px 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+
 }
 #hoverDiv{
     display: flex;
@@ -90,7 +93,7 @@ i {
 #Categories:hover #hoverDiv,#Business:hover #bhoverDiv,#tech:hover #thoverDiv{
     display: flex;
     flex-direction: column;
-    margin-top:3.0%;
+    margin-top:1.5%;
     visibility: visible;
     opacity: 1;
     color: purple;
@@ -107,7 +110,6 @@ i {
     color: black;
     font-size: 13px;
     height: 30px;
-    padding: 0px 15px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -118,7 +120,7 @@ i {
    color: purple;
 }
 #hoverDiv i,#devlopHover i{
-    font-size:11px ;
+    font-size:11px;
 }
 #bhoverDiv,#thoverDiv{
     box-sizing: border-box;
