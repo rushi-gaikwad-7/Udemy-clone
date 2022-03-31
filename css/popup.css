@@ -1,0 +1,24 @@
+
+
+#hoverbox{
+    box-sizing: border-box;
+    width: 100px;
+    position: absolute;
+    background:black;
+    color: white;
+    visibility: hidden;
+    border: 1px solid;
+}
+#slidercontent:hover #hoverbox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100px;
+    position: absolute;
+    background:black;
+    color: white;
+    visibility: hidden;
+    border: 1px solid;
+    visibility: visible;
+    opacity: 1;
+}

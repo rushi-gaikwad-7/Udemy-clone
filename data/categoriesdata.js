@@ -6,28 +6,30 @@ const Developmentdata = () => {
 }
 const webdata = () => {
 
-    let data = [[
-        "JavaScript",
-        "React",
-        "CSS",
-        "Angular",
-        "Node.js",
-        "HTML5",
-        "PHP",
-        "Django"
-    ],[
-        "Python",
-        "Machine learning",
-        "Deep learning",
-        "Data Analysis",
-        "Artificial Intelligence",
-        "R(programming language)",
-        "TensorFlow",
-        "Statistics"
-    ]]
+    let data = [
+        [
+            "JavaScript",
+            "React",
+            "CSS",
+            "Angular",
+            "Node.js",
+            "HTML5",
+            "PHP",
+            "Django"
+        ],
+        [
+            "Python",
+            "Machine learning",
+            "Deep learning",
+            "Data Analysis",
+            "Artificial Intelligence",
+            "R(programming language)",
+            "TensorFlow",
+            "Statistics"
+        ]
+    ]
     return data;
 }
-
 
 const businessdata = () => {
     let data = ["Enterpreneurship", "Communication", "Management", "Sales", "Business Strategy", "Operations",

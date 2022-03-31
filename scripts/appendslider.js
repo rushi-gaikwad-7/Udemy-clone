@@ -1,7 +1,29 @@
+
+
+let dataarr=[1,2,3,4]
+
+const Devlop = (dataarr) => {
+
+    let box = document.createElement('div');
+    dataarr.map(function(data,i,arr){
+        if (i > 6) {
+            return box.innerHTML;
+        }
+        let name = document.createElement('p');
+        name.innerText = data;
+        box.append(name)
+    })
+    
+    return box.innerHTML;
+}
+
 function appendslider(data,parent){
     parent.innerHTMl="";
     data.map((el)=>{
         let box = document.createElement("div");
+        let hoverbox = document.createElement("div");
+        hoverbox.id="hoverbox";
+        hoverbox.innerHTML=`${Devlop(dataarr)}`
         let subbox = document.createElement("div");
         box.setAttribute("id","slidercontent")
         let courseimage= document.createElement("img");
@@ -32,7 +54,7 @@ function appendslider(data,parent){
         stprice.innerText="Rs"+el.stprice;
         pricebox.append(price,stprice)
         subbox.append(title,instructor,ratingdiv,pricebox)
-        box.append(courseimage,subbox);
+        box.append(courseimage,subbox,hoverbox);
         parent.append(box);
     })
  }
