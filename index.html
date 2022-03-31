@@ -35,21 +35,23 @@
     </div>
     <div id="pythonBox">
         <div id="pythonDiv">
-        <div>
-            <h2>Expand your career opportunities with Python</h2>
-            <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language.
-                Its
-                simple syntax and readability makes Python perfect for Flask, Django, data science, and machine
-                learning.
-                You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that
-                will
-                appeal to....</p>
-            <div>Explore Python</div>
+            <div>
+                <h2>Expand your career opportunities with Python</h2>
+                <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful
+                    language.
+                    Its
+                    simple syntax and readability makes Python perfect for Flask, Django, data science, and machine
+                    learning.
+                    You’ll learn how to build everything from games to sites to apps. Choose from a range of courses
+                    that
+                    will
+                    appeal to....</p>
+                <div>Explore Python</div>
+            </div>
         </div>
-    </div>
         <div id="pythonslider">
-            <div id="prev5"><i class="fa-solid fa-circle-chevron-left"></i></div>   
-            <div id = pythonsliderbox></div>
+            <div id="prev5"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id=pythonsliderbox></div>
             <div id="next5"><i class="fa-solid fa-circle-chevron-right"></i></div>
         </div>
     </div>
@@ -67,22 +69,22 @@
             <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
         </div>
     </div>
-        <div id="stundentview">
-            <h2>Students are viewing</h2>
-               <div id="stundentviewslider">
-                <div id="prev2"><i class="fa-solid fa-circle-chevron-left"></i></div>  
-                <div id ="studentsliderbox"></div>
-                <div id="next2"><i class="fa-solid fa-circle-chevron-right"></i></div>
-               </div>
+    <div id="stundentview">
+        <h2>Students are viewing</h2>
+        <div id="stundentviewslider">
+            <div id="prev2"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="studentsliderbox"></div>
+            <div id="next2"><i class="fa-solid fa-circle-chevron-right"></i></div>
         </div>
-        <div id="businessDiv">
-            <h2>Because you searched for “business”</h2>
-            <div id="businessslider">
-                <div id="prev"><i class="fa-solid fa-circle-chevron-left"></i></div>  
-                <div id = "businesssliderbox"></div>
-                <div id="next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-            </div>   
+    </div>
+    <div id="businessDiv">
+        <h2>Because you searched for “business”</h2>
+        <div id="businessslider">
+            <div id="prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="businesssliderbox"></div>
+            <div id="next"><i class="fa-solid fa-circle-chevron-right"></i></div>
         </div>
+    </div>
     <h2>Top categories</h2>
     <div id="categories">
         <div>
@@ -211,82 +213,33 @@
     import appendslider from './scripts/appendslider.js';
     import doSlide from './scripts/slidercode.js';
 
-    function makeData(url,t,i,r,p,ts,st){
-    this.image= url;
-    this.title= t;
-    this.instructor=i;
-    this.rating=r;
-    this.price=p;
-    this.totalsale=ts;
-    this.stprice=st;
-    this.destitle=`JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.`;
-    this.desop1= `Learn to write JavaScript functions`;
-    this.desop2= `Code your own apps and games in JavaScript for Mac, Windows, or Linux, for beginners of all ages`;
-    this.desop3= `Become job-ready by understanding how JavaScript really works behind the scenes`
-}
-   
-let python1= new makeData(`https://img-b.udemycdn.com/course/240x135/2776760_f176_9.jpg`,`100 Days of Code: The Complete Python `,`Dr angella Yu`,4.5,455,`(634674)`,6723)
-let python2= new makeData(`https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg`,`2022 Complete Python Bootcamp `,`Jose Portilla`,4.6,455,`(37543)`,7089)
-let python3= new makeData(`https://img-c.udemycdn.com/course/240x135/629302_8a2d_2.jpg`,`Learn Python Programming Masterclass`,`Tim Buchalka Jean-Paul`,4.6,455,`(94674)`,8934)
-let python4= new makeData(`https://img-c.udemycdn.com/course/240x135/2473048_8255_5.jpg`,`Complete Python zero To Mastery `,`Andrei  Neagoie`,4.7,455,`(38274)`,8442)
-let python5= new makeData(`https://img-b.udemycdn.com/course/240x135/692188_9da7_26.jpg`,`The Python Mega Course 2022`,`Ardit Sulcie`,4.6,455,`(734674)`,7937)
-let python6= new makeData(`https://img-c.udemycdn.com/course/240x135/1547268_1b84_3.jpg`,`The Complete Python `,`Rob Parcival`,4.6,455,`(53674)`,4642)
-let python7= new makeData(`https://img-b.udemycdn.com/course/240x135/903744_8eb2.jpg`,`Python For Data Science And Machine Learing`,`Jose portilla`,4.6,455,`(23784)`,3657)
-let python8= new makeData(`https://img-c.udemycdn.com/course/240x135/1386294_cf10_3.jpg`,`Python for  Beginners`,`Zyan Kahna`,4.5,455,`(53464)`,4749)
-let python9= new makeData(`https://img-c.udemycdn.com/course/240x135/903378_f32d_7.jpg`,`The Python Bibble, Everything You need to Program`,`Josh wella`,4.7,455,`(234424)`,4649)
-let python10= new makeData(`https://img-b.udemycdn.com/course/240x135/543600_64d1_4.jpg`,`Automate the boaring stuff`,`Al Sweigart`,4.5,455,`(389544)`,4754)
+    import { pythondata, viewdata,Bussinessdata,jsdata,topjsdata } from "/data/sliderdata.js"
 
-let pythonCourses=[python1,python2,python3,python4,python5,python6,python7,python8,python9,python10]
+    let pythonCourses = pythondata();
+    let pythonsliderbox = document.querySelector("#pythonsliderbox");
+    appendslider(pythonCourses, pythonsliderbox)
 
-let pythonsliderbox= document.querySelector("#pythonsliderbox");
-appendslider(pythonCourses,pythonsliderbox)
-
-var items5= document.querySelectorAll("#pythonsliderbox>div");
-doSlide(items5,"prev5","next5")
+    var items5 = document.querySelectorAll("#pythonsliderbox>div");
+    doSlide(items5, "prev5", "next5")
 
 
+    let csCourses = viewdata();
 
-//                                <-----------Students Viwing data ---------------->
-let csobj1= new makeData(`https://img-b.udemycdn.com/course/240x135/1565838_e54e_15.jpg`,`The Complete 2022 Web Development Bootcamp`,`Dr Angeal Yu`,4.7,455,`(64674)`,4672)
-let csobj2= new makeData(`https://img-b.udemycdn.com/course/240x135/567828_67d0.jpg`,`2022 Complete Python Bootcamp`,`Josh Portila`,4.6,455,`(456724)`,9083)
-let csobj3= new makeData(`https://img-b.udemycdn.com/course/240x135/1362070_b9a1_2.jpg`,`React- The Complete guide`,`Academind by Maximillan`,4.6,455,`(142674)`,2845)
-let csobj4= new makeData(`https://img-b.udemycdn.com/course/240x135/851712_fc61_6.jpg`,`The Complete JavaScript course`,`Jonas Schmedtmaan`,4.7,455,`(346741)`,7621)
-let csobj5= new makeData(`https://img-b.udemycdn.com/course/240x135/625204_436a_3.jpg`,`The Web Development BootCamp`,`Colt Steele`,4.7,455,`(234674)`,3528)
-let csobj6= new makeData(`https://img-b.udemycdn.com/course/240x135/2196488_8fc7_7.jpg`,`Ultimate AWS Certified Solutions`,`Stephane Maarek `,4.7,455,`(534674)`,3427)
-let csobj7= new makeData(`https://img-b.udemycdn.com/course/240x135/793796_0e89_2.jpg`,`Microsoft Excel BTOA`,`Kyle Pew, Office web`,4.7,455,`(234674)`,3521)
-let csobj8= new makeData(`https://img-b.udemycdn.com/course/240x135/762616_7693_3.jpg`,`Java Programming And Masterclass`,`Tim Buchalka's `,4.6,455,`(53274)`,3437)
-let csobj9= new makeData(`https://img-b.udemycdn.com/course/240x135/756150_c033_2.jpg`,`The Complete SQL Bootcamp`,`Jose Portilla`,4.7,455,`(33424)`,4432)
-let csobj10= new makeData(`https://img-b.udemycdn.com/course/240x135/437398_46c3_10.jpg`,`Angular The Complete Guide`,`Maximal Schwezweeala`,4.7,455,`(74674)`,3548)
+    let studentSlidebox = document.querySelector("#studentsliderbox");
+    appendslider(csCourses, studentSlidebox);
 
-let csCourses=[csobj1,csobj2,csobj3,csobj4,csobj5,csobj6,csobj7,csobj8,csobj9,csobj10];
+    var items2 = document.querySelectorAll("#studentsliderbox>div");
 
-let studentSlidebox= document.querySelector("#studentsliderbox");
-appendslider(csCourses,studentSlidebox);
-
-var items2= document.querySelectorAll("#studentsliderbox>div");
-
-doSlide(items2,"prev2","next2")
+    doSlide(items2, "prev2", "next2")
 
 
-//                       <----Data for Bussiness Slider----->
-let obj1= new makeData(`https://img-b.udemycdn.com/course/240x135/15305_0987_6.jpg`,`Chief Financial Officer Leadership`,`Blair Cook CPA, CA MBA `,4.5,455,`(148524)`,2499);
-let obj2= new makeData(`https://img-b.udemycdn.com/course/240x135/17782_50e2_14.jpg`,`Master Your Mind And Brain`,`Anette Prehn`,4.5,455,`(34532)`,3452)
-let obj3= new makeData(`https://img-b.udemycdn.com/course/240x135/20241_f580_5.jpg`,`Customer Service Training`,`Webucator Training`,4.5,455,`(44321)`,2134)
-let obj4= new makeData(`https://img-b.udemycdn.com/course/240x135/23972_35ee_13.jpg`,`Improve Communication`,`Michael Williams`,4.4,455,`(34542)`,4326)
-let obj5= new makeData(`https://img-b.udemycdn.com/course/240x135/25671_f3b1_4.jpg`,`How to Write An Effective Reaseach Paper`,`Mohhammad noori`,4.5,455,`(123531)`,908)
-let obj6= new makeData(`https://img-b.udemycdn.com/course/240x135/25671_f3b1_4.jpg`,`Proffessional Techniqual Writting`,`Ugur Akinci,PhD`,4.5,455,`(51432)`,8712)
-let obj7= new makeData(`https://img-b.udemycdn.com/course/240x135/26589_aaad_7.jpg`,`Novel Writting WorkShop`,`Steve Alcorn`,4.5,455,`(41321)`,1243)
-let obj8= new makeData(`https://img-b.udemycdn.com/course/240x135/28903_4884_3.jpg`,`Story Telling For Buisness`,`Kevin Allison`,4.6,455,`(90222)`,874)
-let obj9= new makeData(`https://img-b.udemycdn.com/course/240x135/33949_3a7e_5.jpg`,`Directing the Actor:A USC course`,`Nina Foch, RAndal KieSer`,4.6,455,`(43567)`,1567)
-let obj10= new makeData(`https://img-b.udemycdn.com/course/240x135/34268_4bc5_16.jpg`,`Qms Auditor`,`Sandeep Kumar`,4.6,455,`(34674)`,5082)
+    let BussinesCourses =Bussinessdata();
+    let bussinesslidebox = document.querySelector("#businesssliderbox");
 
-let BussinesCourses=[obj1,obj2,obj3,obj4,obj5,obj6,obj7,obj8,obj9,obj10];
-console.log(BussinesCourses)
-let bussinesslidebox = document.querySelector("#businesssliderbox");
-appendslider(BussinesCourses,bussinesslidebox)
+    appendslider(BussinesCourses, bussinesslidebox)
 
-var items= document.querySelectorAll("#businesssliderbox>div");
+    var items = document.querySelectorAll("#businesssliderbox>div");
 
-doSlide(items,"prev","next")
+    doSlide(items, "prev", "next")
 
 </script>
