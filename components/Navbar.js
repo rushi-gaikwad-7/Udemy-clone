@@ -62,12 +62,8 @@
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
      </div>
-     <div id="login">
-     Log in
-     </div>
-     <div id="signup">
-     Sign up
-     </div>
+     <a href="/login/login.html"><div id="login">Log in</div></a>
+     <a href="/signup/signup.html"><div id="signup">Sign up</div></a>
      <div id="lng">
      <i class="fa-solid fa-globe"></i>
      </div>`

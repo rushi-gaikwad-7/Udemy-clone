@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/categories.css">
     <link rel="stylesheet" href="./signup.css">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <div id="navbar"></div>
     <div class="lContainer">
         <div class="row"><b>Sign Up and Start Learning!</b></div>
         <form action="/action_page.php">
@@ -79,41 +81,16 @@
               <div class="form-group sign">Already have an account? <a href="https://www.udemy.com/join/login-popup/?locale=en_US&next=https%3A%2F%2Fwww.udemy.com%2Fjoin%2Flogin-popup%2F%3Flocale%3Den_US%26response_type%3Dhtml%26next%3Dhttps%253A%252F%252Fwww.udemy.com%252F&response_type=html"><b>Log In</b></a></div>
               <!-- <div class="form-group log"><a><b>Log in with your organization</b></a></div> -->
             </form>
-
-            <div class="flexBox">
-                <div class="box1">
-                  <div>Top companies choose <a href="https://business.udemy.com/request-demo-in-mx/?user_type=visitor&utm_method=0&ref=footer-ad&locale=en_US&utm_source=marketplace"><b>Udemy for Business</b></a> to build in-demand career skills.
-                </div>
-              </div>
-                <div class="box2">
-                  <div>
-                    <img src="https://s.udemycdn.com/partner-logos/lyft-logo.svg" alt="lyft-logo">
-                  </div>
-                  <div>
-                    <img src="https://s.udemycdn.com/partner-logos/adidas-logo.svg" alt="adidas-logo">
-                  </div>
-                  <div>
-                    <img src="https://s.udemycdn.com/partner-logos/eventbrite-logo.svg" alt="eventbrite-logo">
-                  </div>
-                  <div>
-                    <img src="https://s.udemycdn.com/partner-logos/surveymonkey-logo.svg" alt="surveymonkey-logo">
-                  </div>
-                  <div>
-                    <img src="https://s.udemycdn.com/partner-logos/booking-logo.svg" alt="booking-logo">
-                  </div>
-                </div>
-              </div>
-            </div>
-    
+            <div id="footer"> </div>
 </body>
 </html>
 
 <script type="module">
     let header = document.querySelector("#navbar");
     let footerbar = document.querySelector("#footer");
-    import navbar from "/componets/Navbar.js"
-    import footer from "/componets/footer.js"
-    header.innerHTML = navbar();
+    import navbar from "/components/navbar.js"
+    import footer from "/components/footer.js"
+    header.innerHTML = navbar(); 
     footerbar.innerHTML = footer();
 </script>
 
