@@ -26,10 +26,7 @@
         #main,#javascriptslider+h2,#alsolearn{
             margin: 30px;
         }
-        #ctitle{
-           
-            
-        }
+        
         #line{
             display: flex;
             align-items: flex-end;
@@ -202,6 +199,34 @@
        #freelearn>div{
           width: 55%;
        }
+       #freelearn>div>p{
+           font-size: 18px;
+           font-weight: lighter;
+           color: #1C1D1F;
+       }
+       #freelearn>div>h2{
+           font-size: 32px;
+       }
+       #freelearn>div>h3{
+           font-size: 24px;
+           border-bottom: 1px solid lightgray;
+           padding-bottom: 16px;
+       }
+       #freelearn>div>h5{
+           font-size: 16px;
+           font-weight: bolder;
+       }
+       #freelearn>div>h3+h5{
+           padding: 20px;
+           text-align: center;
+           border: 1px solid black;
+       }
+       .checkrating+button{
+           padding: 5px 20px;
+           border: none;
+           background-color: lightgrey;
+
+       }
     </style>
 </head>
 <body>
@@ -255,11 +280,11 @@
     <div id="filter">
         <div>
             <h4><span><i class="fa-solid fa-bars-filter"></i></span>&nbsp;Filter</h4>
-            <select>
+            <select id="sortdropdown">
                 <option>Sort by</option>
-                <option>Most Popular</option>
-                <option>High Rated</option>
-                <option>Newest</option>
+                <option value="popular">Most Popular</option>
+                <option value="highrated">High Rated</option>
+                <option value="new">Newest</option>
             </select>
         </div>
        <h4>1,222 results</h4>
@@ -267,21 +292,27 @@
     <div id="sortbox">
         <div id="sortfilter">
             <h3>Ratings</h3>
-            <div class="checkrating">
-                <input type ="checkbox">
-                <img src="https://garagegympro.com/wp-content/uploads/2019/03/4-7-stars-rating.jpg">
-                <p>&nbsp;&nbsp;4.7 & Up&nbsp;&nbsp;(413)</p>
-            </div>
-            <div class="checkrating">
-                <input type ="checkbox">
-                <img src="https://th.bing.com/th/id/R.7f71a02152c2e86b399ca55ac4208a11?rik=43%2biuqEjTNXppg&riu=http%3a%2f%2fi1.wp.com%2fsupplementpolice.com%2fwp-content%2fuploads%2f2017%2f04%2f46stars_small.png&ehk=eD26%2b28nDqOEyjHuzvl50ZrP5vk0FU0Vl9nDF7syIl4%3d&risl=&pid=ImgRaw&r=0">
-                <p>&nbsp;&nbsp;4.5 & Up&nbsp;&nbsp;(789)</p>
-            </div>
-            <div class="checkrating">
-                <input type ="checkbox">
-                <img src="https://th.bing.com/th/id/OIP.O3wbiD5XgCTesLXWdwoh5QHaBi?pid=ImgDet&w=480&h=100&rs=1">
-                <p>&nbsp;&nbsp;4.0 & Up&nbsp;&nbsp;(654)</p>
-            </div>
+
+            
+                <div class="checkrating">
+                    <input type ="radio" id="greater47">
+                    <img src="https://garagegympro.com/wp-content/uploads/2019/03/4-7-stars-rating.jpg">
+                    <p>&nbsp;&nbsp;4.7 & Up&nbsp;&nbsp;(413)</p>
+                </div>
+                <div class="checkrating">
+                    <input type ="radio" id="greater45">
+                    <img src="https://th.bing.com/th/id/R.7f71a02152c2e86b399ca55ac4208a11?rik=43%2biuqEjTNXppg&riu=http%3a%2f%2fi1.wp.com%2fsupplementpolice.com%2fwp-content%2fuploads%2f2017%2f04%2f46stars_small.png&ehk=eD26%2b28nDqOEyjHuzvl50ZrP5vk0FU0Vl9nDF7syIl4%3d&risl=&pid=ImgRaw&r=0">
+                    <p>&nbsp;&nbsp;4.5 & Up&nbsp;&nbsp;(789)</p>
+                </div>
+                <div class="checkrating">
+                    <input type ="radio" id="greater40">
+                    <img src="https://th.bing.com/th/id/OIP.O3wbiD5XgCTesLXWdwoh5QHaBi?pid=ImgDet&w=480&h=100&rs=1">
+                    <p>&nbsp;&nbsp;4.0 & Up&nbsp;&nbsp;(654)</p>
+                </div>
+            
+                <button id="clearfilter">Clear Filters</button>
+
+
             <h3>Video Duration</h3>
             <div id="hour">
                 <input type ="checkbox">
@@ -329,7 +360,7 @@
             <h4 style="color: #52d;">Learn more about JavaScript</h4>
             <h3>Why is JavaScript important?</h3>
             <h3>What are the main uses of JavaScript?</h3>
-            <h5>Show more</h5>
+            <h5 >Show more</h5>
             <h3>Free JavaScript lessons</h3>
             <p>bite-sized learing in minutes</p>
             <div id="minutelearn">

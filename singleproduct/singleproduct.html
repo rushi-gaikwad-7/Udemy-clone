@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7a27244389.js" crossorigin="anonymous"></script>
+    <style>
+        #ratingpic{
+         height: 20px;
+         width: 70px;
+         margin: 10px;
+        }
+        #ratingbox{
+            display: flex;
+            align-items: center;
+            
+        }
+        #productbox{
+            background-color: #222;
+            color: antiquewhite;
+        }
+        #productbox>div{
+         display: grid;
+         grid-template-columns: 40% 30%;
+         gap:100px;
+         justify-content: space-evenly;
+        }
+        #ratingbox>h4{
+            margin: 5px;
+            color: black;
+            background-color: #ffa;
+            padding: 3px;
+        }
+        #ratingbox>p{
+            margin: 10px;
+        }
+       #productbox>div>div>h4{
+           color:blueviolet;
+       }
+       #imgbox>img{
+           width: 100%;
+       }
+       #imgbox{
+           
+       background-color: aliceblue;
+       margin: 50px;
+       color: #222;
+       
+       }
+       #imgbox>h1,#imgbox>p,#imgbox>div,#imgbox>h4{
+           margin: 20px;
+       }
+        #imgbox>h4{
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            color: black
+        }
+        #addtocart{
+            background-color: blueviolet;
+         
+            color: aliceblue;
+            border: none;
+           
+        }
+        #addtocart+button{
+            border-radius: 0px;
+            border: 1px solid black;
+            background-color: #222;
+            padding: 5px;
+        }
+        #addtocart+button>i{
+            font-size: 18px; 
+            color: antiquewhite;
+            padding: 5px;
+        }
+        #imgbox>div+h4{
+            margin-top: -12px;
+            
+        }
+        #imgbox>div{
+            display: grid;
+            grid-template-columns: 70% 20%;
+            gap: 20px;
+        }
+        #topics{
+            display: grid;
+            grid-template-columns: repeat(3,25%);
+            justify-content: space-evenly;
+            gap:20px;
+            width: 90%;
+            margin: 30px auto;
+            text-align: justify;
+            border: 1px solid lightgray;
+        }
+        #productbox+div{
+            margin:auto;
+            font-size: 30px;
+            
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: -17px;
+        }
+    </style>
+</head>
+<body>
+    <div id="productbox">
+        
+    </div>
+    <div>What you'll learn</div>
+    <div id="topics">
+        <div>
+            <ul type="square">
+                <li>Become an advanced, confident, and modern JavaScript developer from scratch</li>
+                <li>Become job-ready by understanding how JavaScript really works behind the scenes</li>
+                <li>JavaScript fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, etc.</li>
+                <li>Modern OOP: Classes, constructors, prototypal inheritance, encapsulation, etc</li>
+                <li>Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs</li>
+                <li>Modern tools for 2021 and beyond: NPM, Parcel, Babel and ES6 modules</li>
+                <li>Get friendly support in the Q&A area</li>
+            </ul>
+         
+        </div>
+        <div>
+            <ul type="sqaure">
+                <li>Build 6 beautiful real-world projects for your portfolio (not boring toy apps)</li>
+                <li>How to think and work like a developer: problem-solving, researching, workflows</li>
+                <li>Modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.</li>
+                <li>Complex concepts like the 'this' keyword, higher-order functions, closures, etc.</li>
+                <li>How to architect your code using flowcharts and common patterns</li>
+                <li>Practice your skills with 50+ challenges and assignments (solutions included)</li>
+                <li>Design your unique learning path according to your goals: course pathway</li>
+            </ul>
+         
+        </div>
+        <div>
+            
+            <ul type="square">
+                <li><h3>This course includes:</h3></li>
+                <li>69 hours on-demand video</li>
+                <li>22 articles</li>
+                <li>18 downloadable resources</li>
+                <li>Full lifetime access</li>
+                <li>Access on mobile and TV</li>
+                <li>Certificate of completion</li>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let product = JSON.parse(localStorage.getItem("singleproduct"));
+    console.log(product);
+    
+    let productbox= document.querySelector("#productbox");
+    displayproduct(product);
+    function displayproduct(data){
+        productbox.innerHTML="";
+        data.map((el)=>{
+            let box= document.createElement("div");
+            let tdrbox= document.createElement("div");
+            let pagepath= document.createElement("h4");
+            pagepath.innerText= "Development  >  Web_Development   >  JavaScript";
+            let title= document.createElement("h1");
+            title.innerText=el.title;
+            let des= document.createElement("h3");
+            des.innerText=el.destitle;
+            let ratingbox= document.createElement("div");
+            ratingbox.setAttribute("id","ratingbox")
+            let bestseller= document.createElement("h4");
+            bestseller.innerText="Bestseller"
+            let rating= document.createElement("h3");
+            rating.innerText=el.rating;
+            let rating_img= document.createElement("img");
+            rating_img.setAttribute("id","ratingpic")
+            if(el.rating<4.5){
+                rating_img.src= `https://th.bing.com/th/id/OIP.O3wbiD5XgCTesLXWdwoh5QHaBi?pid=ImgDet&w=480&h=100&rs=1`
+            }else if(el.rating==4.5){
+                rating_img.src= `https://th.bing.com/th/id/R.7f71a02152c2e86b399ca55ac4208a11?rik=43%2biuqEjTNXppg&riu=http%3a%2f%2fi1.wp.com%2fsupplementpolice.com%2fwp-content%2fuploads%2f2017%2f04%2f46stars_small.png&ehk=eD26%2b28nDqOEyjHuzvl50ZrP5vk0FU0Vl9nDF7syIl4%3d&risl=&pid=ImgRaw&r=0`
+            }else if(el.rating>4.5){
+                rating_img.src= `https://garagegympro.com/wp-content/uploads/2019/03/4-7-stars-rating.jpg`
+            }
+            let trating= document.createElement("p");
+            trating.innerText=el.totalsale+` ratings`;
+            let tstudent= document.createElement("p");
+            tstudent.innerText= `596,775 students`;
+            trating.style.color="blueviolet";
+            ratingbox.append(bestseller,rating,rating_img,trating,tstudent);
+            let created= document.createElement("p");
+            created.innerText="Created by Jonas Schmedtmaann";
+            tdrbox.append(pagepath,title,des,ratingbox,created);
+            let imgbox=document.createElement("div");
+            imgbox.setAttribute("id","imgbox")
+            let image= document.createElement("img");
+            image.src=el.image;
+            let price= document.createElement("h1");
+            price.innerText="Rs"+el.price;
+            let hour= document.createElement("p");
+            hour.innerText="9  hours left at this price!"
+            let btnbox=document.createElement("div");
+            let btn1=document.createElement("button");
+            btn1.innerText=`Add to cart`
+            btn1.setAttribute("id","addtocart")
+            let btn2= document.createElement("button");
+            btn2.innerHTML=`<i class="fa-solid fa-heart"></i>`;
+            btnbox.append(btn1,btn2);
+            let buy= document.createElement("h4");
+            buy.innerText="Buy now"
+            imgbox.append(image,price,hour,btnbox,buy);
+            box.append(tdrbox,imgbox)
+            productbox.append(box);
+        })
+    }
+</script>

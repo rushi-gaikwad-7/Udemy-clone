@@ -66,12 +66,16 @@ doSlide(items4,"prev4","next4")
 let  sortbox= document.querySelector("#sortitem")
 let filterdata=[...jsCourses,...topjsCourses];
 displayFiltersearch(filterdata)
-
+let singleproductarr=JSON.parse(localStorage.getItem("singleproduct"))||[];
 function displayFiltersearch(data){
 sortbox.innerHTML="";
 data.map((el)=>{
  let box= document.createElement('div');
  let imgtitlebox= document.createElement('div');
+ imgtitlebox.addEventListener("click",()=>{
+     singleproductarr[0]=el;
+     localStorage.setItem("singleproduct",JSON.stringify(singleproductarr));
+ })
  let image= document.createElement('img');
  image.src=el.image;
  let tdrbox= document.createElement("div");
@@ -105,3 +109,69 @@ box.append(imgtitlebox,price);
 sortbox.append(box);
 })
 }
+
+
+let greater47= document.querySelector("#greater47");
+greater47.addEventListener("click",()=>{
+    let greater47data= filterdata.filter((el)=>{
+         return el.rating>=4.7;
+    })
+    displayFiltersearch(greater47data)
+})
+
+let greater45= document.querySelector("#greater45");
+greater45.addEventListener("click",()=>{
+    let greater45data= filterdata.filter((el)=>{
+        return el.rating==4.5;
+    })
+    displayFiltersearch(greater45data)
+})
+
+let greater40= document.querySelector("#greater40");
+greater40.addEventListener("click",()=>{
+    let greater40data= filterdata.filter((el)=>{
+        return el.rating<4.5;
+    })
+    displayFiltersearch(greater40data)
+})
+
+let sortdropdown=document.querySelector("#sortdropdown")
+sortdropdown.addEventListener("change",()=>{
+    if(sortdropdown.value=="popular"){
+        let mostpopulardata= filterdata.filter((el)=>{
+            let str=el.totalsale;
+            let num="";
+            for(let i=1;i<str.length-1;i++){
+            num=num+str[i];
+            }
+            num= Number(num);
+            return num>100000;
+        })
+        console.log(mostpopulardata)
+        displayFiltersearch(mostpopulardata)
+    }else if(sortdropdown.value=="highrated"){
+        let greater47data= filterdata.filter((el)=>{
+            return el.rating>=4.7;
+       })
+       displayFiltersearch(greater47data);
+    }else if(sortdropdown.value=="new"){
+        let newdata= filterdata.filter((el)=>{
+            let str=el.totalsale;
+            let num="";
+            for(let i=1;i<str.length-1;i++){
+            num=num+str[i];
+            }
+            num= Number(num);
+            return num<=75000;
+        })
+        displayFiltersearch(newdata)
+    }
+   
+})
+
+document.querySelector("#clearfilter").addEventListener("click",()=>{
+    displayFiltersearch(filterdata);
+    greater45.checked= false;
+    greater40.checked= false;
+    greater47.checked= false;
+})
