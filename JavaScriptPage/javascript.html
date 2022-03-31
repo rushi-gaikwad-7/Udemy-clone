@@ -159,6 +159,49 @@
        #sortitem>div>div>div>div>h4{
            color: coral;
        }
+       #add{
+           display: flex;
+           justify-content: space-evenly;
+           border-top: 1px solid lightgrey;
+           border-bottom: 1px solid lightgray;
+       }
+       #add>div{
+           display: flex;
+           align-items: center;
+           width: 25%;
+       }
+       #add>div>i{
+           font-size: 20px;
+           background-color: lightgray;
+           border-radius: 50%;
+           padding: 12px;
+           margin: 10px;
+       }
+       #minutelearn{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap: 20px;
+       }
+       #minutelearn>div{
+        border: 1px solid lightgray;
+        padding: 20px;
+       }
+       #minutelearn>div>i{
+           color: aliceblue;
+           background-color: black;
+           border-radius: 50%;
+           padding: 15px;
+           font-size: 20px;
+       }
+       #freelearn{
+          display: flex;
+          justify-content: center;
+           margin: 30px;
+           text-align: justify;
+       }
+       #freelearn>div{
+          width: 55%;
+       }
     </style>
 </head>
 <body>
@@ -261,6 +304,59 @@
             <h3>Subtitles</h3>
         </div>
         <div id="sortitem"></div>
+    </div>
+    <div id="add">
+        <div>
+            <i class="fa-solid fa-play"></i>
+            <h4>Learn in-demand skills with over 183,000 video courses</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-star"></i>
+            <h4>Choose courses taught by real-world experts</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-infinity"></i>
+            <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
+        </div>
+    </div>
+    <div id="freelearn">
+        <div>
+            <h2>Learn more about JavaScript</h2>
+            <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build interactive web applications, choose the best framework, and work with other programming languages like HTML and CSS.</p>
+            <h3>Frequently asked questions</h3>
+            <h4>What is JavaScript?</h4>
+            <p>JavaScript is a curly-braced, dynamically typed, prototype-based, object-oriented programming language. It started as the programming language for the web and is one of the three layers of standard web technologies — the other two being HTML and CSS. JavaScript allows you to create and control content dynamically on a web page without requiring a page reload. Web browsers are able to interpret it, and when triggered by events, modify the HTML and CSS of a web page with dynamic updates. JavaScript also uses asynchronous calls to fetch data from web services in the background. Although it was initially only used in web browsers, JavaScript engines have since been put to use as servers with Node.js, included in desktop application frameworks like Electron, and embedded in phone frameworks like Apache Cordova.</p>   
+            <h4 style="color: #52d;">Learn more about JavaScript</h4>
+            <h3>Why is JavaScript important?</h3>
+            <h3>What are the main uses of JavaScript?</h3>
+            <h5>Show more</h5>
+            <h3>Free JavaScript lessons</h3>
+            <p>bite-sized learing in minutes</p>
+            <div id="minutelearn">
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>What is JavaScript</h5>
+                    <p>10min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>What is GraphQL</h5>
+                    <p>13min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>Install Node.js and VS Code</h5>
+                    <p>3min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>Install VS Code</h5>
+                    <p>5min video</p>
+                </div>
+            </div>
+            <h4 style="color: #52d;">View JavaScript Courses</h4>
+        </div>
+ 
     </div>
 </body>
 </html>
