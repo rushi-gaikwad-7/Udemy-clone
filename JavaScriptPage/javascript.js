@@ -1,7 +1,7 @@
 
-import appendslider from "../Slider/scripts/appendslider.js";
-import doSlide from "../Slider/scripts/slidercode.js";
-
+import appendslider from "../scripts/appendslider.js";
+import doSlide from "../scripts/slidercode.js";
+console.log(appendslider)
 
 function makeData(url,t,i,r,p,ts,st){
     this.image= url;
