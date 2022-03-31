@@ -165,6 +165,18 @@
 
     doSlide(items2, "prev2", "next2")
 
+    let input_box= document.querySelector("#navsearch");
+    input_box.addEventListener("keypress",()=>{
+        getSearched(event);
+    })
+   
+    function getSearched(e){
+        if(e.code=="Enter"){
+            let input= input_box.value;
+            localStorage.setItem("searchvalue",input);
+            window.location.href='../SearchPage/Search.html'
+        }
+    }
 
 
 </script>
