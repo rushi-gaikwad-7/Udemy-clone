@@ -21,6 +21,7 @@ body {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 #notifyDiv {
     width: 85%;
     margin: auto;
@@ -35,10 +36,12 @@ body {
     padding: 12px;
     box-sizing: border-box;
 }
-#slides{
+
+.slides {
     width: 90%;
     margin: auto;
 }
+
 #notifyDiv>div {
     width: 22%;
     display: flex;
@@ -58,6 +61,7 @@ body {
     color: black;
 
 }
+
 #notifyDiv>div>div:last-child {
     height: 40px;
     display: flex;
@@ -67,10 +71,12 @@ body {
     color: white;
     border: 1px solid white;
 }
+
 #mainCourseDiv {
     width: 90%;
     margin: auto;
 }
+
 .udemyB {
     display: flex;
     justify-content: space-between;
@@ -78,42 +84,50 @@ body {
     margin: auto;
     margin-bottom: 80px;
 }
-.udemyB>div{
+
+.udemyB>div {
     width: 40%;
-    margin-top:60px;
+    margin-top: 60px;
 }
+
 .udemyB>div>div {
     background-color: black;
     color: white;
     padding: 10px;
     width: 27%;
 }
-.unic{
+
+.unic {
     width: 40% !important;
 }
+
 #company {
     margin-bottom: 50px;
     padding: 25px 0px;
     background-color: #f7f9fa;
     text-align: center;
 }
-#company img{
-   margin-right: 10px;
+
+#company img {
+    margin-right: 10px;
 }
 
-#topics{
+#topics {
     background-color: #f7f9fa;
     padding: 50px 0px;
 }
-#topics>div:first-child{
+
+#topics>div:first-child {
     width: 90%;
     display: flex;
     justify-content: space-around;
 }
-#topics h3{
+
+#topics h3 {
     color: #027bff;
 }
-#topics>div:last-child{
+
+#topics>div:last-child {
     width: 170px;
     border: 1px solid;
     box-sizing: border-box;
@@ -123,70 +137,102 @@ body {
     font-size: 14px;
     padding: 10px;
 }
-body>h2,body>h1,body>p{
+
+body>h2,
+body>h1,
+body>p {
     margin-left: 75px;
 }
-#categories{
+
+#categories {
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
-#topCourse{
+
+#topCourse {
     display: flex;
-    width:50%;
+    width: 50%;
     align-items: center;
     justify-content: space-around;
-    margin-left:70px;
-    color:#c7c9cd;
+    margin-left: 70px;
+    color: #c7c9cd;
 }
-#topCourse>h4:hover{
+
+#topCourse>h4:hover {
     color: black;
 }
-#pythonBox{
+
+#pythonBox {
     border: 1px solid #d1d7dc;
     width: 90%;
     margin: auto;
     padding: 50px 0px;
     box-sizing: border-box;
 }
-#stundentview,#businessDiv{
+
+#stundentview,
+#businessDiv {
     width: 90%;
     margin: auto;
 }
-#pythonDiv{
+
+#pythonDiv {
     box-sizing: border-box;
     padding: 20px 40px;
 }
-#pythonDiv>div:first-child{
+
+#pythonDiv>div:first-child {
     width: 65%;
 }
-#pythonDiv>div>div:first-of-type{
+
+#pythonDiv>div>div:first-of-type {
     width: 16%;
     box-sizing: border-box;
     padding: 5px 10px;
     border: 1px solid;
 }
-#midDiv{
+
+#midDiv {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
     background-color: #f7f9fa;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-#midDiv>div{
+
+#midDiv>div {
     display: flex;
     align-items: center;
     width: 22%;
 }
-#midDiv i,img{
+
+#midDiv i,
+img {
     margin-right: 10px;
 }
-#midDiv img{
-    width:35px;
+
+#midDiv img {
+    width: 35px;
 }
 
+#toprecm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+}
+
+#toprecm>div {
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #d1d7dc;
+    text-align: center;
+}
