@@ -46,7 +46,7 @@
      </div>
      <div id="searchbar">
          <i class="fa-solid fa-magnifying-glass"></i>
-         <input type="text" placeholder="Search for anything">
+         <input type="text" placeholder="Search for anything" id="navsearch">
      </div>
      <a href=""><div id="Business">Udemy Business
      <div id="bhoverDiv">
