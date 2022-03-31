@@ -1,11 +1,12 @@
 
-   import {Developmentdata,webdata,businessdata,Financedata} from "/data/categoriesdata.js"
+   import {Developmentdata,webdata,businessdata,Financedata,itdata,offdata} from "/data/categoriesdata.js"
    
    let devlopdata=Developmentdata();
    let subwebdata=webdata();
    let businesdata=businessdata();
    let Fdata=Financedata();
-console.log(Fdata);
+   let Ttdata=itdata();
+   let officedata=offdata();
    import {Devlopment,Devlop} from "/scripts/categories.js";
    const navbar = () => {
    return`
@@ -25,9 +26,11 @@ console.log(Fdata);
      <i class="fa-solid fa-angle-right"></i>
      <div id="FHover">${Devlopment(Fdata,subwebdata)}</div>
      </div>
-     <div>IT & Software
+     <div id="itBox">IT & Software
+     <div id="ItHover">${Devlopment(Ttdata,subwebdata)}</div>
      <i class="fa-solid fa-angle-right"></i></div>
-     <div>Office Productivity
+     <div id="Office">Office Productivity
+     <div id="offHover">${Devlopment(officedata,subwebdata)}</div>
      <i class="fa-solid fa-angle-right"></i></div>
      <div>Personal Devlopment
      <i class="fa-solid fa-angle-right"></i></div>

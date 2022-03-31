@@ -13,15 +13,16 @@ const Devlop = (dataarr) => {
     return box.innerHTML;
 }
 
-const Devlopment = (dataarr, subdata) => {
-
+const Devlopment = (dataarr,subdata) => {
+console.log(subdata);
     let box = document.createElement('div');
-    dataarr.forEach(data => {
+    dataarr.map(function(data,i,arr){
         let box1 = document.createElement('div');
         box1.id = "web";
         let subbox = document.createElement('div');
         subbox.id = "webdevlopHover";
-        subbox.innerHTML = `${subDevlopment(subdata)}`;
+        if(i<2){
+        subbox.innerHTML = `${subDevlopment(subdata[i])}`;}
         let name = document.createElement('p');
         name.innerText = data;
         let icon = document.createElement('i');

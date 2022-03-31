@@ -1,0 +1,116 @@
+
+
+#Categories {
+    height: 100%;
+    padding: 25px 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+
+}
+
+#hoverDiv {
+    display: flex;
+    width: 15%;
+    position: absolute;
+    height: 550px;
+    background: #fff;
+    visibility: hidden;
+    border: 1px solid #d1d7dc;
+}
+
+#devlopHover,
+#webdevlopHover,
+#BHover,
+#FHover,
+#ItHover,
+#offHover {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #d1d7dc;
+}
+
+#Categories:hover #hoverDiv,
+#Business:hover #bhoverDiv,
+#tech:hover #thoverDiv,#learing:hover #LrhoverDiv
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+    visibility: visible;
+    opacity: 1;
+    color: purple;
+}
+#Devlopment:hover #devlopHover,
+#web:hover #webdevlopHover,
+#Bbox:hover #BHover,
+#Fbox:hover #FHover,
+#itBox:hover #ItHover,
+#Office:hover #offHover {
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#hoverDiv>div,
+#devlopHover>div,
+#webdevlopHover>div,
+#BHover>div,
+#FHover>div,
+#ItHover>div,
+#offHover>div{
+    color: black;
+    font-size: 13px;
+    height: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#hoverDiv>div:hover,
+#devlopHover>div:hover {
+    color: purple;
+}
+
+#hoverDiv i,
+#devlopHover i {
+    font-size: 11px;
+}
+
+#bhoverDiv,
+#thoverDiv,#LrhoverDiv{
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    position: absolute;
+    height: 200px;
+    background: #fff;
+    visibility: hidden;
+    border-left: 1px solid #d1d7dc;
+}
+
+#bhoverDiv>h4,
+#thoverDiv>h4,#LrhoverDiv>h4 {
+    color: black;
+    text-align: center;
+}
+
+#bhoverDiv>div,
+#thoverDiv>div {
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
