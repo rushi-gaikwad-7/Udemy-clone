@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homenavebar.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/categories.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <title>www.udemy.com</title>
+</head>
+
+<body>
+    <div id="homenavbar"></div>
+    <div id="adDiv">
+        <div>
+            <h1>Dream big</h1>
+            <p>Find a course to help you reach where you want to go. Starting at ₹455 through March 31.</p>
+        </div>
+    </div>
+    <div id="notifyDiv">
+        <p>Training 5 or more people? Get your team access to Udemy's top 6,000+ courses</p>
+        <div>
+            <div>Get Udemy Business</div>
+            <div>Dismiss</div>
+        </div>
+    </div>
+    <h1>What to learn next</h1>
+    <div class="slides">
+        <h2>Because you viewed “The Complete JavaScript Course 2022: From Zero to Expert!”</h2>
+        <div id="javascriptslider">
+            <div id="prev3"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id=jssliderbox></div>
+            <div id="next3"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+        <h2>Because you searched for “python”</h2>
+        <div id="pythonslider">
+            <div id="prev5"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id=pythonsliderbox></div>
+            <div id="next5"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+    </div>
+    <div id="midDiv">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/49/49669.png" alt="">
+            <h4>Learn in-demand skills with over 183,000 video courses</h4>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/40/40403.png" alt="">
+            <h4>Choose courses taught by real-world experts</h4>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/262/262047.png" alt="">
+            <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
+        </div>
+    </div>
+    <div class="slides">
+        <h2>Top courses in JavaScipt</h2>
+
+        <div id="topjsslider">
+            <div id="prev4"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id=topjssliderbox></div>
+            <div id="next4"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+        <h2>Top courses in Business</h2>
+        <div id="businessslider">
+            <div id="prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="businesssliderbox"></div>
+            <div id="next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+    </div>
+    <div class="slides">
+        <h2>Topics recommended for you</h2>
+        <div id="toprecm">
+            <div>Web Design</div>
+            <div>CSS</div>
+            <div>HTML5</div>
+            <div>Django</div>
+            <div>Data Science</div>
+            <div>HTML</div>
+            <div>JavaScript</div>
+            <div>Web Deveopment</div>
+            <div>PHP</div>
+            <div>Mobile Development</div>
+        </div>
+    </div>
+    <div class="slides">
+        <h2>Students are viewing</h2>
+        <div id="stundentviewslider">
+            <div id="prev2"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="studentsliderbox"></div>
+            <div id="next2"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+    </div>
+    <div id="footer"> </div>
+</body>
+
+</html>
+
+<script type="module">
+    let header = document.querySelector("#homenavbar");
+    let footerbar = document.querySelector("#footer");
+    import homenavbar from "/components/homenavbar.js"
+    import homefooter from "/components/homefooter.js"
+    header.innerHTML = homenavbar();
+    footerbar.innerHTML = homefooter();
+
+
+
+    import appendslider from '/scripts/appendslider.js';
+    import doSlide from '/scripts/slidercode.js';
+
+    import { pythondata, viewdata,Bussinessdata,jsdata,topjsdata } from "/data/sliderdata.js"
+
+    let jsCourses = jsdata();
+
+    let jSsliderbox = document.querySelector("#jssliderbox");
+    appendslider(jsCourses, jSsliderbox)
+
+    var items3 = document.querySelectorAll("#jssliderbox>div");
+    doSlide(items3, "prev3", "next3")
+
+
+    let pythonCourses = pythondata();
+
+    let pythonsliderbox = document.querySelector("#pythonsliderbox");
+    appendslider(pythonCourses, pythonsliderbox)
+
+    var items5 = document.querySelectorAll("#pythonsliderbox>div");
+    doSlide(items5, "prev5", "next5")
+
+
+
+    let topjsCourses = topjsdata();
+
+
+    let topJssliderbox = document.querySelector("#topjssliderbox");
+    appendslider(topjsCourses, topJssliderbox);
+
+    var items4 = document.querySelectorAll("#topjssliderbox>div");
+    doSlide(items4, "prev4", "next4")
+
+
+    let BussinesCourses =Bussinessdata();
+
+    let bussinesslidebox = document.querySelector("#businesssliderbox");
+    appendslider(BussinesCourses, bussinesslidebox)
+
+    var items = document.querySelectorAll("#businesssliderbox>div");
+    doSlide(items, "prev", "next")
+
+  
+    let csCourses = viewdata();
+
+    let studentSlidebox = document.querySelector("#studentsliderbox");
+    appendslider(csCourses, studentSlidebox);
+
+    var items2 = document.querySelectorAll("#studentsliderbox>div");
+
+    doSlide(items2, "prev2", "next2")
+
+
+
+</script>

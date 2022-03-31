@@ -1,0 +1,77 @@
+
+body{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+#footer {
+    margin-top: 50px;
+    background-color: #1c1d1f;
+    color: white;
+}
+h3>b{
+    color:#c57ef5;
+}
+#fstBox,
+#secndBox {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #3e4143;
+    padding: 10px 0px;
+
+}
+#fstBox>div:last-child {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#mainDiv {
+    padding: 15px 0px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainDiv>div:first-child {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    line-height: 1 rem;
+    grid-template-areas:
+        "A B C"
+}
+#mainDiv>div:last-child {
+    width: 150px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    height: 40px;
+}
+#mainDiv i{
+    margin-right: 10px;
+}
+#a {
+    grid-area: A;
+}
+
+#b {
+    grid-area: B;
+}
+
+#c {
+    grid-area: C;
+}
+#lastDiv {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
