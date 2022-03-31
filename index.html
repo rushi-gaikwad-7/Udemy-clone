@@ -209,7 +209,9 @@
     let footerbar = document.querySelector("#footer");
     import navbar from "/components/navbar.js"
     import footer from "/components/footer.js"
-    header.innerHTML = navbar(); footerbar.innerHTML = footer();
+
+    header.innerHTML = navbar(); 
+    footerbar.innerHTML = footer();
 
     import appendslider from './scripts/appendslider.js';
     import doSlide from './scripts/slidercode.js';
@@ -242,5 +244,4 @@
     var items = document.querySelectorAll("#businesssliderbox>div");
 
     doSlide(items, "prev", "next")
-
 </script>

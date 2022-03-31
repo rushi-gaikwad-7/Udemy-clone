@@ -34,7 +34,7 @@ function logIn() {
             }
             loginDetail.push(loginUser);
             localStorage.setItem('loginDetails', JSON.stringify(loginDetail));
-            window.location.href = "../AfterLogin/afterLogin.html"
+            window.location.href = "/pages/homepage.html"
 
             break;
         }
