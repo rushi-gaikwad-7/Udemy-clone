@@ -133,10 +133,3 @@ function signUp() {
     }
 
 }
-// This is newly added script for showing no of items present in cart
-let noOfCartItems = document.getElementById('noOfCartItems');
-let cartItem = JSON.parse(localStorage.getItem('cartItem'));
-noOfCartItems.innerHTML = `${cartItem.length}`
-function showCart() {
-    window.location.href = "../Cart/after_cart.html"
-}
