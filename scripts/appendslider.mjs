@@ -1,37 +1,30 @@
 
-// import popdata from "/data/popupdata.js"
-
-// let dataarr=popdata();
-
-// console.log(dataarr);
-
-const Devlop = (data) => {
-    console.log(data);
-    let box = document.createElement('div');
-    let name = document.createElement('h3');
-    name.innerText = data.title;
-    let best = document.createElement('div');
-    best.innerText = "Bestseller";
-    best.id="bestdiv"
-    let discrip = document.createElement('p');
-    discrip.innerText = data.destitle;
-    let desop2 = document.createElement('p');
-    desop2.innerText=data.desop2;
-    let desop3=document.createElement('p');
-    desop3.innerText=data.desop3;
-    let box2 = document.createElement('div');
-    box2.id="box2"
-     let btn= document.createElement('button');
-    btn.innerText="Add to Cart";
-    let wishlist=document.createElement('div')
-    wishlist.id="popwish";
-    wishlist.innerHTML=`<i class="fa-regular fa-heart"></i>`
-    
-    box2.append(btn,wishlist)
-    box.append(name,best,discrip,desop2,desop3,box2)
-return box.innerHTML;
+    const Devlop = (data) => {
+        console.log(data);
+        let box = document.createElement('div');
+        let name = document.createElement('h3');
+        name.innerText = data.title;
+        let best = document.createElement('div');
+        best.innerText = "Bestseller";
+        best.id="bestdiv"
+        let discrip = document.createElement('p');
+        discrip.innerText = data.destitle;
+        let desop2 = document.createElement('p');
+        desop2.innerText=data.desop2;
+        let desop3=document.createElement('p');
+        desop3.innerText=data.desop3;
+        let box2 = document.createElement('div');
+        box2.id="box2"
+         let btn= document.createElement('button');
+        btn.innerText="Add to Cart";
+        let wishlist=document.createElement('div')
+        wishlist.id="popwish";
+        wishlist.innerHTML=`<i class="fa-regular fa-heart"></i>`
+        
+        box2.append(btn,wishlist)
+        box.append(name,best,discrip,desop2,desop3,box2)
+    return box.innerHTML;
 }
-
 
 let singleproductarr=JSON.parse(localStorage.getItem("singleproduct"))||[];
 function appendslider(data,parent){
