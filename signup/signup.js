@@ -127,7 +127,7 @@ function signUp() {
         }
         userData.push(udemyUser);
         localStorage.setItem('udemyUsers', JSON.stringify(userData));
-        window.location.href = "login.html"
+        window.location.href = "/login/login.html"
     } else {
         alert('Please fill valid Full name')
     }

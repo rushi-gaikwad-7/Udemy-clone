@@ -39,11 +39,14 @@ const subDevlopment = (dataarr) => {
     dataarr.forEach(data => {
         let box1 = document.createElement('div');
         box1.id = "web";
+        let ancor=document.createElement('a');
+      
         let name = document.createElement('p');
         name.innerText = data;
         let icon = document.createElement('i');
         icon.innerHTML = `<i class="fa-solid fa-angle-right"></i>`;
-        box1.append(name, icon)
+        ancor.append(name);
+        box1.append(ancor, icon);
         box.append(box1);
 
     });
