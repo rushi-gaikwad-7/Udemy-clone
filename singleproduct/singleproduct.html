@@ -137,7 +137,7 @@
          
         </div>
         <div>
-            <ul type="sqaure">
+            <ul type="square">
                 <li>Build 6 beautiful real-world projects for your portfolio (not boring toy apps)</li>
                 <li>How to think and work like a developer: problem-solving, researching, workflows</li>
                 <li>Modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.</li>
@@ -233,12 +233,16 @@
                cartproduct.push(el);
                localStorage.setItem("cartproducts",JSON.stringify(cartproduct))
                console.log(cartproduct)
+               window.location.href="../cartpage/maincart.html"
             })
             let btn2= document.createElement("button");
             btn2.innerHTML=`<i class="fa-solid fa-heart"></i>`;
             btnbox.append(btn1,btn2);
             let buy= document.createElement("h4");
             buy.innerText="Buy now"
+            buy.addEventListener("click",()=>{
+                window.location.href="../PaymentGateway/payment.html"
+            })
             imgbox.append(image,price,hour,btnbox,buy);
             box.append(tdrbox,imgbox)
             productbox.append(box);
