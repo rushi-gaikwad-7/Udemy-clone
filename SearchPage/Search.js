@@ -136,26 +136,37 @@ sortbox.append(box);
 
 
 let greater47= document.querySelector("#greater47");
+let greater45= document.querySelector("#greater45");
+let greater40= document.querySelector("#greater40");
+
 greater47.addEventListener("click",()=>{
     let greater47data= data.filter((el)=>{
          return el.rating>=4.7;
     })
+    greater45.checked= false;
+    greater40.checked= false;
+
     displayFiltersearch(greater47data)
 })
 
-let greater45= document.querySelector("#greater45");
+
 greater45.addEventListener("click",()=>{
     let greater45data= data.filter((el)=>{
         return el.rating==4.5;
     })
+    greater40.checked= false;
+    greater47.checked= false;
+
     displayFiltersearch(greater45data)
 })
 
-let greater40= document.querySelector("#greater40");
+
 greater40.addEventListener("click",()=>{
     let greater40data= data.filter((el)=>{
         return el.rating<4.5;
     })
+    greater45.checked= false;
+    greater47.checked= false;
     displayFiltersearch(greater40data)
 })
 
