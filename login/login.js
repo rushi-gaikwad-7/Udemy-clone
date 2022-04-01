@@ -14,6 +14,8 @@ window.onclick = function (event) {
     }
 };
 
+
+
 function logIn() {
     var input_field = document.getElementsByClassName('input-field');
     var loginEmail = input_field[0].value;
@@ -24,7 +26,6 @@ function logIn() {
             let loginUser = {
                 loginEmail,
             }
-
             let loginDetail;
             loginDetail = localStorage.getItem('loginDetails');
             if (loginDetail == null) {
