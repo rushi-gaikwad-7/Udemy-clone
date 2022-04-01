@@ -166,7 +166,7 @@ const Devlop = (data) => {
            let btn= document.createElement('button');
           btn.innerText="Add to Cart";
           let wishlist=document.createElement('div')
-          wishlist.id="wishlist";
+          wishlist.id="popwish";
           wishlist.innerHTML=` <i class="fa-regular fa-heart"></i>`
           updated.innerText = data.updatedDate;
           box2.append(btn,wishlist)
