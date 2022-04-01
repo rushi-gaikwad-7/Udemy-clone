@@ -237,7 +237,8 @@ showtotal()
 let apply= document.querySelector("#apply").addEventListener("click",()=>{
     let couponcode= document.querySelector("#coupon").value;
     if(couponcode=="KEEPLEARNING"){
-        document.querySelector("#totalprice").innerText= 0.8*totalcart;
+        document.querySelector("#totalprice").innerText= Math.floor(0.8*totalcart);
+        localStorage.setItem("totalcartprice",Math.floor(0.8*totalcart));
     }else{
         alert("Invalid Coupon Code")
     }
