@@ -26,7 +26,7 @@ console.log(dataarr);
 }
 
 
-
+let singleproductarr=JSON.parse(localStorage.getItem("singleproduct"))||[];
 
 function appendslider(data,parent){
     parent.innerHTMl="";
@@ -37,6 +37,11 @@ function appendslider(data,parent){
         hoverbox.innerHTML=`${Devlop(dataarr[i])}`
         let subbox = document.createElement("div");
         box.setAttribute("id","slidercontent")
+        box.addEventListener("click",()=>{
+            singleproductarr[0]=el;
+            localStorage.setItem("singleproduct",JSON.stringify(singleproductarr));
+            window.location.href="../singleproduct/singleproduct.html"
+        })
         let courseimage= document.createElement("img");
         courseimage.src= el.image;
         let title=  document.createElement("h4");
