@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/7a27244389.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" href="/css/popup.css">
     <style>
         #maincart{
             width: 90%;
@@ -12,7 +15,7 @@
         }
         #cartbox{
             display: grid;
-            grid-template-columns: 80% 20%;
+            grid-template-columns: 78% 22%;
             gap:35px;
         }
 
@@ -67,33 +70,98 @@
     color: blueviolet;
     font-size: 15px;
 }
-
+#clogo{
+    border: 1px solid lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#clogo>div{
+    display: flex;
+    align-items: center;
+}
+#clogo>div>img{
+    height: 25px;
+    width: 70px;
+    
+}
+#clogo>h5{
+    
+    margin-top: 5px;
+    font-size: 16px;
+}
+#checkoutbtn{
+    width: 100%;
+    background-color: blueviolet;
+    padding: 20px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 16px;
+    border:none;
+}
+#coupon{
+    width: 60%;
+    padding: 10px;
+    border-radius: 0%;
+}
+#apply{
+    width: 25%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border:none;
+    font-weight: bolder;
+}
+#total>p{
+    font-size: 22px;
+    color: #777;
+}
+#totalitem{
+    font-size: 20px;
+    font-weight: lighter;
+}
     </style>
 </head>
 <body>
     <div id="maincart">
         <h1>Shopping Cart</h1>
+        <p id="totalitem"></p>
         <div id="cartbox">
             <div id="sortitem"></div>
             <div id="total">
-                <p>Total</p>
-                <h1 id="total"></h1>
+                <p>Total:</p>
+                <h1 id="totalprice"></h1>
                 <button id="checkoutbtn">Checkout</button>
-                <h5>Promotions</h5>
+                <h3>Promotions</h3>
+                <p style="font-size: 16px; font-weight: bolder;">KEEPLEARNING is applied</p>
                 <input type="text" placeholder="Enter Coupon" id="coupon">
                 <button id="apply">Apply</button>
-                <h5>Buy now, pay later for orders of $25 and over</h5>
-                <div>
-                    <img src="https://www.udemy.com/staticx/udemy/images/v8/klarna-logo.svg">
-                    <img src="https://www.udemy.com/staticx/udemy/images/v8/afterpay-logo.svg">
+                <div id="clogo">
+                    <h5>Buy now, pay later for orders of $25 and over</h5>
+                    <div >
+                        <img src="https://www.udemy.com/staticx/udemy/images/v8/klarna-logo.svg">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v8/afterpay-logo.svg">
+                    </div>
                 </div>
+             
             </div>
         </div>
     </div>
+    <h2>You Might Also like</h2>
+   
+    <div class="jsslide">
+        <div id="javascriptslider">
+            <div id="prev3"><i class="fa-solid fa-circle-chevron-left"></i></div>  
+                <div id = jssliderbox></div>
+                <div id="next3"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
+    </div>
+
 </body>
 </html>
 
-<script>
+<script type="module">
 
 let  sortbox= document.querySelector("#sortitem")    
 let data= JSON.parse(localStorage.getItem("cartproducts"))||[];
@@ -101,7 +169,7 @@ displayFiltersearch(data);
 
 function displayFiltersearch(data){
 sortbox.innerHTML="";
-data.map((el)=>{
+data.map((el,index)=>{
  let box= document.createElement('div');
  let imgtitlebox= document.createElement('div');
  let image= document.createElement('img');
@@ -137,6 +205,13 @@ let price= document.createElement("h4");
 price.innerText="Rs"+el.price;
 let remove = document.createElement("p");
 remove.innerText="Remove";
+remove.addEventListener("click",()=>{
+    data.splice(index,1);
+    localStorage.setItem("cartproducts",JSON.stringify(data));
+    document.querySelector("#totalitem").innerText=`${data.length} Course in Cart`
+    displayFiltersearch(data);
+    showtotal()
+})
 let save= document.createElement("p");
 save.innerText="Save for Later";
 let wishlist = document.createElement('p');
@@ -146,6 +221,42 @@ box.append(imgtitlebox,pricebox);
 sortbox.append(box);
 })
 }
+
+let totalcart;
+function showtotal(){
+    let total= data.reduce((acc,el)=>{
+      return acc+ el.price;
+    },0)
+    totalcart=total;
+    localStorage.setItem("totalcartprice",total);
+    document.querySelector("#totalprice").innerText= total;
+}
+showtotal()
+
+
+let apply= document.querySelector("#apply").addEventListener("click",()=>{
+    let couponcode= document.querySelector("#coupon").value;
+    if(couponcode=="KEEPLEARNING"){
+        document.querySelector("#totalprice").innerText= 0.8*totalcart;
+    }else{
+        alert("Invalid Coupon Code")
+    }
+})
+document.querySelector("#totalitem").innerText=`${data.length} Course in Cart`
+
+
+import appendslider from "../scripts/appendslider.mjs";
+import doSlide from "../scripts/slidercode.js";
+
+import { pythondata, viewdata,Bussinessdata,jsdata,topjsdata } from "/data/sliderdata.js"
+
+let jsCourses=jsdata();
+
+let jSsliderbox= document.querySelector("#jssliderbox");
+appendslider(jsCourses,jSsliderbox)
+
+var items3= document.querySelectorAll("#jssliderbox>div");
+doSlide(items3,"prev3","next3")
 
 
 </script>
