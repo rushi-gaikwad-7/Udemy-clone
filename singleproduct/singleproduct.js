@@ -1,3 +1,11 @@
+let header = document.querySelector("#homenavbar");
+let footerbar = document.querySelector("#footer");
+import homenavbar from "/components/homenavbar.js"
+import homefooter from "/components/homefooter.js"
+header.innerHTML = homenavbar();
+footerbar.innerHTML = homefooter();
+
+
 let product = JSON.parse(localStorage.getItem("singleproduct"));
 console.log(product);
 let cartproduct=JSON.parse(localStorage.getItem("cartproducts"))||[]
