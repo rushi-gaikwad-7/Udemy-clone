@@ -9,8 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/slider.css">
     <link rel="stylesheet" href="/css/popup.css">
     <link rel="stylesheet" href="javascript.css">
+    <link rel="stylesheet" href="/css/homenavebar.css">
+    <link rel="stylesheet" href="/css/categories.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
+    <div id="homenavbar"></div>
     <div id="main">
         <h1>JavaScript Courses</h1>
         <h3 style="color: #777;">JavaScript relates to <span style="color:#52d">Development, IT & Software</span></aDevelopment></h4>
@@ -29,11 +34,15 @@
             <div></div>
         </div>
     </div>
-    <div id="javascriptslider">
-            <div><h2 id="prev3">&#8249</h2></div>   
-            <div id = jssliderbox></div>
-            <div><h2 id="next3">&#8250</h2></div>
+    <div class="jsslide">
+        <div id="javascriptslider">
+            <div id="prev3"><i class="fa-solid fa-circle-chevron-left"></i></div>  
+                <div id = jssliderbox></div>
+                <div id="next3"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+
     </div>
+   
     <h2>JavaScript students also learn</h2>
     <div id="alsolearn">
         <div>Web Development</div>
@@ -48,11 +57,13 @@
         <div>PHP</div>
     </div>
     <h2>Top courses in Javascript and <span style="color: #52d;">Front End Development</span></h2>
+   <div class="jsslide">
     <div id="topjsslider">
-        <div><h2 id="prev4">&#8249</h2></div>   
+        <div id="prev4"><i class="fa-solid fa-circle-chevron-left"></i></div>   
         <div id = topjssliderbox></div>
-        <div><h2 id="next4">&#8250</h2></div>
+        <div id="next4"><i class="fa-solid fa-circle-chevron-right"></i></div>
     </div>
+   </div>
     <div>
         <h2>All JavaScript courses</h2>
         <p>Join more than 12 million learners and train up on JavaScript on Udemy. Choose from a wide range of top-rated JavaScript courses. From back-end development to app or website building, we’ve got you covered. Our real-world experts can lead you through hands-on projects to apply your skills.</p>
@@ -172,6 +183,7 @@
         </div>
  
     </div>
+    <div id="footer"> </div>
 </body>
 </html>
 

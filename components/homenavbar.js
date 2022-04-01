@@ -13,7 +13,7 @@
 const homenavbar = () => {
     return `
      <div>
-     <a href="index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+     <a href="/pages/homepage.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
      <div id="Categories">Categories
      <div id="hoverDiv">
