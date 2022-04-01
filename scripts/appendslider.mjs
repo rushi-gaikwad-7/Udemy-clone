@@ -1,11 +1,40 @@
 
+import popdata from "/data/popupdata.js"
+
+let dataarr=popdata();
+
+console.log(dataarr);
+
+    const Devlop = (data) => {
+        console.log(data);
+        let box = document.createElement('div');
+        let name = document.createElement('h2');
+        name.innerText = data.course_name;
+        let discrip = document.createElement('p');
+        discrip.innerText = data.courseHeading;
+        let updated = document.createElement('h4');
+        let box2 = document.createElement('div');
+         let btn= document.createElement('button');
+        btn.innerText="Add to Cart";
+        let wishlist=document.createElement('div')
+        wishlist.id="wishlist";
+        wishlist.innerHTML=` <i class="fa-regular fa-heart"></i>`
+        updated.innerText = data.updatedDate;
+        box2.append(btn,wishlist)
+        box.append(name,discrip,updated,box2)
+    return box.innerHTML;
+}
+
+
 
 
 function appendslider(data,parent){
     parent.innerHTMl="";
     data.map((el,i)=>{
         let box = document.createElement("div");
-       
+        let hoverbox = document.createElement("div");
+        hoverbox.id="hoverbox";
+        hoverbox.innerHTML=`${Devlop(dataarr[i])}`
         let subbox = document.createElement("div");
         box.setAttribute("id","slidercontent")
         let courseimage= document.createElement("img");
@@ -36,7 +65,7 @@ function appendslider(data,parent){
         stprice.innerText="Rs"+el.stprice;
         pricebox.append(price,stprice)
         subbox.append(title,instructor,ratingdiv,pricebox)
-        box.append(courseimage,subbox);
+        box.append(hoverbox,courseimage,subbox);
         parent.append(box);
     })
  }
