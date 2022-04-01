@@ -167,8 +167,37 @@
 <script type="module">
     let header = document.querySelector("#navbar");
     let footerbar = document.querySelector("#footer");
-    import navbar from "/componets/Navbar.js"
-    import footer from "/componets/footer.js"
-    header.innerHTML = navbar();
-    footerbar.innerHTML = footer();
+    // import navbar from "/componets/Navbar.js"
+    // import footer from "/componets/footer.js"
+    // header.innerHTML = navbar();
+    // footerbar.innerHTML = footer();
+
+    let card = document.querySelector("#card")
+    let nbank = document.querySelector("#nBank")
+    let upi = document.querySelector("#upi")
+    let payTm = document.querySelector("#payTm")
+    
+    card.addEventListener("click",()=>{
+        nbank.checked=false;
+        upi.checked= false;
+        payTm.checked=false;
+    })
+
+    nbank.addEventListener("click",()=>{
+        card.checked=false;
+        upi.checked= false;
+        payTm.checked=false;
+    })
+
+    upi.addEventListener("click",()=>{
+        card.checked=false;
+        payTm.checked=false;
+        nbank.checked=false;
+    })
+    payTm.addEventListener("click",()=>{
+        nbank.checked=false;
+        upi.checked= false;
+        card.checked=false;
+    })
+    
 </script>
