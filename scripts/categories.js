@@ -40,7 +40,7 @@ const subDevlopment = (dataarr) => {
         let box1 = document.createElement('div');
         box1.id = "web";
         let ancor=document.createElement('a');
-      
+      ancor.href="/JavaScriptPage/javascript.html"
         let name = document.createElement('p');
         name.innerText = data;
         let icon = document.createElement('i');
