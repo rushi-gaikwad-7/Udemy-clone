@@ -1,3 +1,12 @@
+
+let header = document.querySelector("#homenavbar");
+let footerbar = document.querySelector("#footer");
+import homenavbar from "/components/homenavbar.js"
+import homefooter from "/components/homefooter.js"
+header.innerHTML = homenavbar();
+footerbar.innerHTML = homefooter();
+
+
 let  sortbox= document.querySelector("#sortitem")    
 let data= JSON.parse(localStorage.getItem("cartproducts"))||[];
 displayFiltersearch(data);
