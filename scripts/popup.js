@@ -154,17 +154,24 @@ let dataarr = [
   return popdata;
 
 }
-
 const Devlop = (data) => {
-console.log(data)
-        let box = document.createElement('div');
-        let name = document.createElement('p');
-        name.innerText = data.course_name;
-        let discrip = document.createElement('p');
-        let updated = document.createElement('p');
-        updated.innerText = data.updatedDate;
-        box.append(name,discrip,updated)
-    return box.innerHTML;
-}
+  console.log(data)
+          let box = document.createElement('div');
+          let name = document.createElement('h2');
+          name.innerText = data.course_name;
+          let discrip = document.createElement('p');
+          discrip.innerText = data.courseHeading;
+          let updated = document.createElement('h4');
+          let box2 = document.createElement('div');
+           let btn= document.createElement('button');
+          btn.innerText="Add to Cart";
+          let wishlist=document.createElement('div')
+          wishlist.id="wishlist";
+          wishlist.innerHTML=` <i class="fa-regular fa-heart"></i>`
+          updated.innerText = data.updatedDate;
+          box2.append(btn,wishlist)
+          box.append(name,discrip,updated,box2)
+      return box.innerHTML;
+  }
 
 export {Devlop,popdata}  ;

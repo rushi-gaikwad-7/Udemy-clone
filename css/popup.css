@@ -1,20 +1,38 @@
-
-
-#hoverbox{
-    padding: 20px;
+#hoverbox {
     display: none;
-    position: relative;
+    position: absolute;
     visibility: hidden;
-    z-index:0;
-    background-color: #fff;
-    box-shadow: 0px 0px 1px 0px;
-    width: 350px;
-    border-radius: 7px;
-    color: #333;
-    margin-left: 150px;
+    background-color: white;
+    border: 1px solid #d1d7dc;
+    padding: 20px;
 }
-#slidercontent:hover #hoverbox{ 
-    display: flex;
+
+#slidercontent:hover #hoverbox {
+    display: inline;
     visibility: visible;
+    margin-left:16%;
+    width: 300px;
     opacity: 1;
+}
+button{
+    background-color: #a435f0;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+#wishlist{
+    width: 10%;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50px;
+}
+#hoverbox>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#hoverbox p{
+   font-size: 20px;
 }
