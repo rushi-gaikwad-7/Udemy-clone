@@ -27,7 +27,7 @@
     return box.innerHTML;
 }
 
-
+let singleproductarr=JSON.parse(localStorage.getItem("singleproduct"))||[];
 function appendslider(data,parent){
     parent.innerHTMl="";
     data.map((el,i)=>{
