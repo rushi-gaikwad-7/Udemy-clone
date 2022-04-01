@@ -1,0 +1,111 @@
+#maincart{
+    width: 90%;
+    margin: auto;
+}
+#cartbox{
+    display: grid;
+    grid-template-columns: 78% 22%;
+    gap:35px;
+}
+
+#sortitem{
+width: 80%;
+}
+#sortitem>div{
+display: flex;
+justify-content: space-between;
+
+}
+#sortitem>div>div{
+display: flex;
+
+}
+#sortitem>div>div>div>div{
+display: flex;
+align-items: center
+}
+#sortitem>div>div>img{
+padding:23px;
+padding-left: 40px ;
+
+}
+#sortitem>div>div>div>h5{
+font-weight:lighter;
+font-size: 15px;
+margin-top: -15px;
+width: 70%;
+text-align: justify;
+}
+#sortitem>div>div>div>p{
+color: #777;
+font-size: 14px;
+margin-top: -15px;
+}
+#sortitem>div>div>div>div{
+margin-top: -20px;
+}
+#sortitem>div>div>div>div>h4{
+color: coral;
+}
+#ratingpic{
+width: 70px;
+height: 20px;
+}
+#pricebox{
+width: 25%;
+}
+#pricebox>p{
+margin-top: -15px;
+color: blueviolet;
+font-size: 15px;
+}
+#clogo{
+border: 1px solid lightgray;
+padding: 20px;
+box-sizing: border-box;
+margin-top: 20px;
+}
+#clogo>div{
+display: flex;
+align-items: center;
+}
+#clogo>div>img{
+height: 25px;
+width: 70px;
+
+}
+#clogo>h5{
+
+margin-top: 5px;
+font-size: 16px;
+}
+#checkoutbtn{
+width: 100%;
+background-color: blueviolet;
+padding: 20px;
+color: aliceblue;
+font-weight: bolder;
+font-size: 16px;
+border:none;
+}
+#coupon{
+width: 60%;
+padding: 10px;
+border-radius: 0%;
+}
+#apply{
+width: 25%;
+padding: 10px;
+background-color: blueviolet;
+color: aliceblue;
+border:none;
+font-weight: bolder;
+}
+#total>p{
+font-size: 22px;
+color: #777;
+}
+#totalitem{
+font-size: 20px;
+font-weight: lighter;
+}

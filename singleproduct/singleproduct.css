@@ -1,0 +1,109 @@
+#ratingpic{
+    height: 20px;
+    width: 70px;
+    margin: 10px;
+   }
+   #ratingbox{
+       display: flex;
+       align-items: center;
+       
+   }
+   #productbox{
+       background-color: #222;
+       color: antiquewhite;
+   }
+   #productbox>div{
+    display: grid;
+    grid-template-columns: 40% 30%;
+    gap:100px;
+    justify-content: space-evenly;
+   }
+   #ratingbox>h4{
+       margin: 5px;
+       color: black;
+       background-color: #ffa;
+       padding: 3px;
+   }
+   #ratingbox>p{
+       margin: 10px;
+   }
+  #productbox>div>div>h4{
+      color:blueviolet;
+  }
+  #imgbox>img{
+      width: 100%;
+  }
+  #imgbox{
+      
+  background-color: aliceblue;
+  margin: 50px;
+  color: #222;
+    
+  }
+  #imgbox>h1,#imgbox>p,#imgbox>div,#imgbox>h4{
+      margin: 20px;
+  }
+   #imgbox>h4{
+       padding: 10px;
+       text-align: center;
+       border: 1px solid black;
+       color: black
+   }
+   #addtocart{
+       background-color: blueviolet;
+    
+       color: aliceblue;
+       border: none;
+      
+   }
+   #addtocart+button{
+       border-radius: 0px;
+       border: 1px solid black;
+       background-color: #222;
+       padding: 5px;
+   }
+   #addtocart+button>i{
+       font-size: 18px; 
+       color: antiquewhite;
+       padding: 5px;
+   }
+   #imgbox>div+h4{
+       margin-top: -12px;
+       
+   }
+   #imgbox>div{
+       display: grid;
+       grid-template-columns: 70% 20%;
+       gap: 20px;
+   }
+   #topics{
+       display: grid;
+       grid-template-columns: repeat(3,25%);
+       justify-content: space-evenly;
+       gap:20px;
+       width: 90%;
+       margin: 30px auto;
+       text-align: justify;
+       border: 1px solid lightgray;
+   }
+   #productbox+div{
+       margin:auto;
+       font-size: 30px;
+       
+       width: 80%;
+       margin-top: 20px;
+       margin-bottom: -17px;
+   }
+   #logobox{
+       width: 90%;
+       margin: auto;
+       margin-top: 30px;
+       border: 1px solid lightgray;
+       padding: 20px;
+   }
+   #logo{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       gap:20px;
+       justify-content: space-evenly;
+   }
