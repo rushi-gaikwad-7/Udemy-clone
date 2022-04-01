@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7a27244389.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\Slider\styles\slider.css">
+    <style>
+        #people{
+            display: flex;
+            align-items: center;
+            margin-top: -25px;
+        }
+        #people>p{
+            color:gray;
+            font-size: 13px;
+        }
+        #ctitle{
+            display: flex;
+        }
+        #ctitle>h4{
+            margin-right: 25px;
+        }
+        #main,#javascriptslider+h2,#alsolearn{
+            margin: 30px;
+        }
+        
+        #line{
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            
+        }
+        #line>div:first-child{
+            border: 1px solid  black;
+            width: 10%;
+        }
+        #line>div:nth-child(2){
+            border: 1px solid gray;
+            width: 90%;
+        }
+        #javascriptslider{
+            margin-top: -70px;
+        }
+        #alsolearn{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto auto;
+            gap: 20px;
+        }
+        #alsolearn>div{
+           padding: 20px;
+           text-align: center;
+           border: 1px solid lightgray;
+        }
+        #alsolearn+h2{
+            margin-left: 30px;
+            margin-bottom: -35px;
+        }
+        #topjsslider+div{
+            margin: 30px;
+        }
+        #topjsslider+div>h3{
+            padding: 30px;
+            border: 1px  solid black;
+        }
+        #topjsslider+div>p{
+           width: 57%;
+           text-align: justify;
+           color: #777;
+           font-size: 18px; 
+        }
+        #filter{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin: 30px;
+        }
+        #filter>div{
+            display: flex;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        #filter>div>h4{
+            border: 1px solid black;
+            margin-right: 4px ;
+            padding: 30px;
+            
+        }
+        #filter>div>select{
+            border: none;
+            height: 100%;
+        }
+        #sortbox{
+            margin: 30px;
+            width: 95%;
+           
+            
+            display: flex;
+        }
+        #sortfilter{
+          width: 20%;
+        }
+       .checkrating{
+           display: flex;
+           align-items: center;
+       }
+       .checkrating>img{
+           height: 20px;
+           width: 70px;
+       }
+       #sortfilter>h3{
+           border-top: 1px solid #777;
+       }
+       #hour>input{
+           margin: 10px auto;
+       }
+       #sortitem{
+           width: 80%;
+       }
+       #sortitem>div{
+           display: flex;
+           justify-content: space-between;
+           
+       }
+       #sortitem>div>div{
+           display: flex;
+
+       }
+       #sortitem>div>div>div>div{
+           display: flex;
+           align-items: center
+       }
+       #sortitem>div>div>img{
+          padding:23px;
+          padding-left: 40px ;
+          
+       }
+       #sortitem>div>div>div>h5{
+           font-weight:lighter;
+           font-size: 15px;
+           margin-top: -15px;
+           width: 400px;
+       }
+       #sortitem>div>div>div>p{
+           color: #777;
+           font-size: 14px;
+           margin-top: -15px;
+       }
+       #sortitem>div>div>div>div{
+           margin-top: -20px;
+       }
+       #sortitem>div>div>div>div>h4{
+           color: coral;
+       }
+       #add{
+           display: flex;
+           justify-content: space-evenly;
+           border-top: 1px solid lightgrey;
+           border-bottom: 1px solid lightgray;
+       }
+       #add>div{
+           display: flex;
+           align-items: center;
+           width: 25%;
+       }
+       #add>div>i{
+           font-size: 20px;
+           background-color: lightgray;
+           border-radius: 50%;
+           padding: 12px;
+           margin: 10px;
+       }
+       #minutelearn{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap: 20px;
+       }
+       #minutelearn>div{
+        border: 1px solid lightgray;
+        padding: 20px;
+       }
+       #minutelearn>div>i{
+           color: aliceblue;
+           background-color: black;
+           border-radius: 50%;
+           padding: 15px;
+           font-size: 20px;
+       }
+       #freelearn{
+          display: flex;
+          justify-content: center;
+           margin: 30px;
+           text-align: justify;
+       }
+       #freelearn>div{
+          width: 55%;
+       }
+       #freelearn>div>p{
+           font-size: 18px;
+           font-weight: lighter;
+           color: #1C1D1F;
+       }
+       #freelearn>div>h2{
+           font-size: 32px;
+       }
+       #freelearn>div>h3{
+           font-size: 24px;
+           border-bottom: 1px solid lightgray;
+           padding-bottom: 16px;
+       }
+       #freelearn>div>h5{
+           font-size: 16px;
+           font-weight: bolder;
+       }
+       #freelearn>div>h3+h5{
+           padding: 20px;
+           text-align: center;
+           border: 1px solid black;
+       }
+       .checkrating+button{
+           padding: 5px 20px;
+           border: none;
+           background-color: lightgrey;
+
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>JavaScript Courses</h1>
+        <h3 style="color: #777;">JavaScript relates to <span style="color:#52d">Development, IT & Software</span></aDevelopment></h4>
+        <div id="people">
+            <i class="fa-solid fa-user-group" style="font-size: 13px;margin-right: 3px;"></i>
+            <p>12,707,375&nbsp;learners</p>
+        </div>
+        <h2>Courses to get you started</h2>
+        <div id="ctitle">
+            <h4>Most popular</h4>
+            <h4>New</h4>
+            <h4>Beginners Favorites</h4>
+        </div>
+        <div id="line">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="javascriptslider">
+            <div><h2 id="prev3">&#8249</h2></div>   
+            <div id = jssliderbox></div>
+            <div><h2 id="next3">&#8250</h2></div>
+    </div>
+    <h2>JavaScript students also learn</h2>
+    <div id="alsolearn">
+        <div>Web Development</div>
+        <div>React</div>
+        <div>Mongo DB</div>
+        <div>Python</div>
+        <div>Vue JS</div>
+        <div>Node JS</div>
+        <div>CSS</div>
+        <div>HTML</div>
+        <div>Front End Web Development</div>
+        <div>PHP</div>
+    </div>
+    <h2>Top courses in Javascript and <span style="color: #52d;">Front End Development</span></h2>
+    <div id="topjsslider">
+        <div><h2 id="prev4">&#8249</h2></div>   
+        <div id = topjssliderbox></div>
+        <div><h2 id="next4">&#8250</h2></div>
+    </div>
+    <div>
+        <h2>All JavaScript courses</h2>
+        <p>Join more than 12 million learners and train up on JavaScript on Udemy. Choose from a wide range of top-rated JavaScript courses. From back-end development to app or website building, we’ve got you covered. Our real-world experts can lead you through hands-on projects to apply your skills.</p>
+        <h3><span><i class="fa-solid fa-circle-exclamation"></i></span>&nbsp;&nbsp;Not sure? All courses have a 30-day money-back guarantee</h3>
+    </div>
+    <div id="filter">
+        <div>
+            <h4><span><i class="fa-solid fa-bars-filter"></i></span>&nbsp;Filter</h4>
+            <select id="sortdropdown">
+                <option>Sort by</option>
+                <option value="popular">Most Popular</option>
+                <option value="highrated">High Rated</option>
+                <option value="new">Newest</option>
+            </select>
+        </div>
+       <h4>1,222 results</h4>
+    </div>
+    <div id="sortbox">
+        <div id="sortfilter">
+            <h3>Ratings</h3>
+
+            
+                <div class="checkrating">
+                    <input type ="radio" id="greater47">
+                    <img src="https://garagegympro.com/wp-content/uploads/2019/03/4-7-stars-rating.jpg">
+                    <p>&nbsp;&nbsp;4.7 & Up&nbsp;&nbsp;(413)</p>
+                </div>
+                <div class="checkrating">
+                    <input type ="radio" id="greater45">
+                    <img src="https://th.bing.com/th/id/R.7f71a02152c2e86b399ca55ac4208a11?rik=43%2biuqEjTNXppg&riu=http%3a%2f%2fi1.wp.com%2fsupplementpolice.com%2fwp-content%2fuploads%2f2017%2f04%2f46stars_small.png&ehk=eD26%2b28nDqOEyjHuzvl50ZrP5vk0FU0Vl9nDF7syIl4%3d&risl=&pid=ImgRaw&r=0">
+                    <p>&nbsp;&nbsp;4.5 & Up&nbsp;&nbsp;(789)</p>
+                </div>
+                <div class="checkrating">
+                    <input type ="radio" id="greater40">
+                    <img src="https://th.bing.com/th/id/OIP.O3wbiD5XgCTesLXWdwoh5QHaBi?pid=ImgDet&w=480&h=100&rs=1">
+                    <p>&nbsp;&nbsp;4.0 & Up&nbsp;&nbsp;(654)</p>
+                </div>
+            
+                <button id="clearfilter">Clear Filters</button>
+
+
+            <h3>Video Duration</h3>
+            <div id="hour">
+                <input type ="checkbox">
+                <label>0-1 Hour&nbsp; (111)</label><br>
+                <input type ="checkbox">
+                <label>1-3 Hour&nbsp; (349)</label><br>
+                <input type ="checkbox">
+                <label>3-6 Hour&nbsp; (442)</label><br>
+                <input type ="checkbox">
+                <label>6-10 Hour&nbsp; (532)</label><br>
+                <input type ="checkbox">
+                <label>24-48 Hour&nbsp; (545)</label><br>
+                <p style="color: #52d;">Show more</p>
+            </div>
+            <h3>Subcategory</h3>
+            <h3>Level</h3>
+            <h3>Language</h3>
+            <h3>Price</h3>
+            <h3>Feature</h3>
+            <h3>Subtitles</h3>
+        </div>
+        <div id="sortitem"></div>
+    </div>
+    <div id="add">
+        <div>
+            <i class="fa-solid fa-play"></i>
+            <h4>Learn in-demand skills with over 183,000 video courses</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-star"></i>
+            <h4>Choose courses taught by real-world experts</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-infinity"></i>
+            <h4>Learn at your own pace, with lifetime access on mobile and desktop</h4>
+        </div>
+    </div>
+    <div id="freelearn">
+        <div>
+            <h2>Learn more about JavaScript</h2>
+            <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build interactive web applications, choose the best framework, and work with other programming languages like HTML and CSS.</p>
+            <h3>Frequently asked questions</h3>
+            <h4>What is JavaScript?</h4>
+            <p>JavaScript is a curly-braced, dynamically typed, prototype-based, object-oriented programming language. It started as the programming language for the web and is one of the three layers of standard web technologies — the other two being HTML and CSS. JavaScript allows you to create and control content dynamically on a web page without requiring a page reload. Web browsers are able to interpret it, and when triggered by events, modify the HTML and CSS of a web page with dynamic updates. JavaScript also uses asynchronous calls to fetch data from web services in the background. Although it was initially only used in web browsers, JavaScript engines have since been put to use as servers with Node.js, included in desktop application frameworks like Electron, and embedded in phone frameworks like Apache Cordova.</p>   
+            <h4 style="color: #52d;">Learn more about JavaScript</h4>
+            <h3>Why is JavaScript important?</h3>
+            <h3>What are the main uses of JavaScript?</h3>
+            <h5 >Show more</h5>
+            <h3>Free JavaScript lessons</h3>
+            <p>bite-sized learing in minutes</p>
+            <div id="minutelearn">
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>What is JavaScript</h5>
+                    <p>10min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>What is GraphQL</h5>
+                    <p>13min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>Install Node.js and VS Code</h5>
+                    <p>3min video</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h5>Install VS Code</h5>
+                    <p>5min video</p>
+                </div>
+            </div>
+            <h4 style="color: #52d;">View JavaScript Courses</h4>
+        </div>
+ 
+    </div>
+</body>
+</html>
+
+<script type="module" src="./udemy project/JavaScriptPage/javascript.js"></script>
