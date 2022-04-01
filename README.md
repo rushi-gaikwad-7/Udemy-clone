@@ -4,7 +4,7 @@ Construct Week Project
 
 TOPIC STATEMENT
 
-    The working clone of "Udemy", this is a platform that allows instructors to build online courses on their preferred topics,which gives the information of the courses in the education,To build this clone we have used HTML5, CSS3, Advanced Javascript. Alongside doing this project, we learnt a lot of new things about team work, proper coordination and thinking along with all the team members. This was our second  project using basic tools and some advanced tools at Masai School. More amazing projects to come ..😊
+The working clone of "Udemy", this is a platform that allows instructors to build online courses on their preferred topics,which gives the information of the courses in the education,To build this clone we have used HTML5, CSS3, Advanced Javascript. Alongside doing this project, we learnt a lot of new things about team work, proper coordination and thinking along with all the team members. This was our second  project using basic tools and some advanced tools at Masai School. More amazing projects to come ..😊
 
 STEPS FOLLOWED
 
