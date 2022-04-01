@@ -1,5 +1,5 @@
 
-import appendslider from "../scripts/appendslider.js";
+import appendslider from "../scripts/appendslider.mjs";
 import doSlide from "../scripts/slidercode.js";
 console.log(appendslider)
 
