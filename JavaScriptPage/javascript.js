@@ -75,6 +75,7 @@ data.map((el)=>{
  imgtitlebox.addEventListener("click",()=>{
      singleproductarr[0]=el;
      localStorage.setItem("singleproduct",JSON.stringify(singleproductarr));
+     window.location.href="../singleproduct/singleproduct.html"
  })
  let image= document.createElement('img');
  image.src=el.image;

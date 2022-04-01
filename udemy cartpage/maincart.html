@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maincart{
+            width: 90%;
+            margin: auto;
+        }
+        #cartbox{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            gap:35px;
+        }
+
+#sortitem{
+   width: 80%;
+}
+#sortitem>div{
+   display: flex;
+   justify-content: space-between;
+   
+}
+#sortitem>div>div{
+   display: flex;
+
+}
+#sortitem>div>div>div>div{
+   display: flex;
+   align-items: center
+}
+#sortitem>div>div>img{
+  padding:23px;
+  padding-left: 40px ;
+  
+}
+#sortitem>div>div>div>h5{
+   font-weight:lighter;
+   font-size: 15px;
+   margin-top: -15px;
+   width: 70%;
+   text-align: justify;
+}
+#sortitem>div>div>div>p{
+   color: #777;
+   font-size: 14px;
+   margin-top: -15px;
+}
+#sortitem>div>div>div>div{
+   margin-top: -20px;
+}
+#sortitem>div>div>div>div>h4{
+   color: coral;
+}
+#ratingpic{
+    width: 70px;
+    height: 20px;
+}
+#pricebox{
+    width: 25%;
+}
+#pricebox>p{
+    margin-top: -15px;
+    color: blueviolet;
+    font-size: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="maincart">
+        <h1>Shopping Cart</h1>
+        <div id="cartbox">
+            <div id="sortitem"></div>
+            <div id="total">
+                <p>Total</p>
+                <h1 id="total"></h1>
+                <button id="checkoutbtn">Checkout</button>
+                <h5>Promotions</h5>
+                <input type="text" placeholder="Enter Coupon" id="coupon">
+                <button id="apply">Apply</button>
+                <h5>Buy now, pay later for orders of $25 and over</h5>
+                <div>
+                    <img src="https://www.udemy.com/staticx/udemy/images/v8/klarna-logo.svg">
+                    <img src="https://www.udemy.com/staticx/udemy/images/v8/afterpay-logo.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+let  sortbox= document.querySelector("#sortitem")    
+let data= JSON.parse(localStorage.getItem("cartproducts"))||[];
+displayFiltersearch(data);
+
+function displayFiltersearch(data){
+sortbox.innerHTML="";
+data.map((el)=>{
+ let box= document.createElement('div');
+ let imgtitlebox= document.createElement('div');
+ let image= document.createElement('img');
+ image.src=el.image;
+ let tdrbox= document.createElement("div");
+ let title= document.createElement("h4");
+ title.innerText=el.title;
+ let dis= document.createElement('h5');
+ dis.innerText=el.destitle;
+ let instructor= document.createElement('p');
+ instructor.innerText=el.instructor;
+ let ratingdiv= document.createElement('div');
+ let rating= document.createElement("h4");
+ rating.innerText=el.rating;
+ let rating_img= document.createElement("img");
+ rating_img.setAttribute("id","ratingpic")
+ if(el.rating<4.5){
+     rating_img.src= `https://th.bing.com/th/id/OIP.O3wbiD5XgCTesLXWdwoh5QHaBi?pid=ImgDet&w=480&h=100&rs=1`
+ }else if(el.rating==4.5){
+     rating_img.src= `https://th.bing.com/th/id/R.7f71a02152c2e86b399ca55ac4208a11?rik=43%2biuqEjTNXppg&riu=http%3a%2f%2fi1.wp.com%2fsupplementpolice.com%2fwp-content%2fuploads%2f2017%2f04%2f46stars_small.png&ehk=eD26%2b28nDqOEyjHuzvl50ZrP5vk0FU0Vl9nDF7syIl4%3d&risl=&pid=ImgRaw&r=0`
+ }else if(el.rating>4.5){
+     rating_img.src= `https://garagegympro.com/wp-content/uploads/2019/03/4-7-stars-rating.jpg`
+ }
+let trating= document.createElement("p");
+trating.innerText=el.totalsale;
+ratingdiv.append(rating,rating_img,trating);
+tdrbox.append(title,dis,instructor,ratingdiv)
+imgtitlebox.append(image,tdrbox);
+let pricebox= document.createElement("div");
+pricebox.setAttribute("id","pricebox")
+pricebox.style.display="block"
+let price= document.createElement("h4");
+price.innerText="Rs"+el.price;
+let remove = document.createElement("p");
+remove.innerText="Remove";
+let save= document.createElement("p");
+save.innerText="Save for Later";
+let wishlist = document.createElement('p');
+wishlist.innerText="Move to Wishlist"
+pricebox.append(price,remove,save,wishlist)
+box.append(imgtitlebox,pricebox);
+sortbox.append(box);
+})
+}
+
+
+</script>
