@@ -11,8 +11,7 @@
  import {Devlopment,Devlop} from "/scripts/categories.js";
 
 const homenavbar = () => {
-    return `
-     <div>
+    return `<div>
      <a href="/pages/homepage.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
      alt="mainlogo"></a>
      <div id="Categories">Categories

@@ -44,19 +44,19 @@ a>div {
     color: black;
 }
 
-input {
+ #navbar ,#homenavbar input {
     background-color: transparent;
     border: 0px solid;
     height: 99%;
     width: 90%;
 }
 
-textarea:focus,
+#navbar ,#homenavbar textarea:focus,
 input:focus {
     outline: none;
 }
 
-i {
+#navbar ,#homenavbar i {
     font-size: 20px;
 }
 
