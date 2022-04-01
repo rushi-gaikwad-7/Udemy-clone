@@ -6,7 +6,7 @@ function makeData(url, t, i, r, p, ts, st) {
     this.price = p;
     this.totalsale = ts;
     this.stprice = st;
-    this.destitle = `JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.`;
+    this.destitle = `For Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.`;
     this.desop1 = `Learn to write JavaScript functions`;
     this.desop2 = `Code your own apps and games in JavaScript for Mac, Windows, or Linux, for beginners of all ages`;
     this.desop3 = `Become job-ready by understanding how JavaScript really works behind the scenes`

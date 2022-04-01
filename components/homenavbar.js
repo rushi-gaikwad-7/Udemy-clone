@@ -1,14 +1,26 @@
+import {
+    Developmentdata,
+    webdata,
+    businessdata,
+    Financedata,
+    itdata,
+    offdata
+} from "/data/categoriesdata.js"
+
+let devlopdata = Developmentdata();
+let subwebdata = webdata();
+let businesdata = businessdata();
+let Fdata = Financedata();
+let Ttdata = itdata();
+let officedata = offdata();
+import {
+    Devlopment,
+    Devlop
+} from "/scripts/categories.js";
 
 
- import {Developmentdata,webdata,businessdata,Financedata,itdata,offdata} from "/data/categoriesdata.js"
-   
- let devlopdata=Developmentdata();
- let subwebdata=webdata();
- let businesdata=businessdata();
- let Fdata=Financedata();
- let Ttdata=itdata();
- let officedata=offdata();
- import {Devlopment,Devlop} from "/scripts/categories.js";
+
+
 
 const homenavbar = () => {
     return `<div>
@@ -94,4 +106,3 @@ const homenavbar = () => {
      `
 }
 export default homenavbar;
-

@@ -5,6 +5,19 @@ import homefooter from "/components/homefooter.js"
 header.innerHTML = homenavbar();
 footerbar.innerHTML = homefooter();
 
+import{modifyFullname} from "/scripts/profile.js"
+let loginDetails = JSON.parse(localStorage.getItem('loginDetails'));
+let udemyUsers = JSON.parse(localStorage.getItem('udemyUsers'));
+let btnUser = document.getElementById('profile');
+for (let i = 0; i < loginDetails.length; i++) {
+    for (let j = 0; j < udemyUsers.length; j++) {
+        if (loginDetails[i].loginEmail == udemyUsers[j].signupEmail) {
+            btnUser.innerText = `${modifyFullname(udemyUsers[j].signupFullname)}`
+        }
+    }
+
+}
+
 
 let product = JSON.parse(localStorage.getItem("singleproduct"));
 console.log(product);

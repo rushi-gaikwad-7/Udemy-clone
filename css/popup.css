@@ -5,16 +5,23 @@
     background-color: white;
     border: 1px solid #d1d7dc;
     padding: 20px;
+    line-height: 2;
+}
+
+#hoverbox>p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 #slidercontent:hover #hoverbox {
     display: inline;
     visibility: visible;
-    margin-left:16%;
-    width: 300px;
+    margin-left: 16%;
+    width: 280px;
     opacity: 1;
 }
-button{
+
+button {
     background-color: #a435f0;
     width: 60%;
     padding: 10px;
@@ -22,17 +29,24 @@ button{
     font-weight: bold;
     font-size: 15px;
 }
-#popwish{
+
+#popwish {
     width: 10%;
     border: 1px solid;
     padding: 10px;
     border-radius: 50px;
 }
-#hoverbox>div{
+
+/* #box2{
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-#hoverbox p{
-   font-size: 20px;
+} */
+
+#bestdiv {
+   
+    background-color: yellow;
+    color: black;
 }
