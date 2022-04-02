@@ -7,18 +7,23 @@ let totalcartprice= localStorage.getItem("totalcartprice");
 all_total_price.innerText= Math.floor(Number((totalcartprice*100)/80));
 discounted_price.innerText= totalcartprice;
 total.innerText=totalcartprice;
+
+
 function shoppingComplete() {
+
   let array = [
     "Payment Successfull",
-    "Course Linked with Your Profile successfully",
+    "Course Linked with Your Profile",
     "Happy Learning!",
-    "Stay Healthy, Thanks for opting online education!",
   ];
 
   let h1 = document.getElementById("notification");
   let index = 0;
-  h1.textContent = array[index++];
-
+  
+  setTimeout(function () {
+    h1.textContent = array[index++];
+  }, 3000);
+ 
   setTimeout(function () {
     h1.textContent = array[index++];
   }, 3000);

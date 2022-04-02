@@ -46,7 +46,7 @@ button {
 } */
 
 #bestdiv {
-   
+   width: 80px !important;
     background-color: yellow;
     color: black;
 }
