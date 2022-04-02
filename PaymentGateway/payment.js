@@ -19,11 +19,10 @@ function shoppingComplete() {
 
   let h1 = document.getElementById("notification");
   let index = 0;
-  
+  h1.textContent = array[index++];
   setTimeout(function () {
-    h1.textContent = array[index++];
+   
   }, 3000);
- 
   setTimeout(function () {
     h1.textContent = array[index++];
   }, 3000);
