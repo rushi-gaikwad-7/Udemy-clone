@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/PaymentGateway/payment.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
+
+   
 </head>
 <body>
+    <div id="navbar">
+        <a href="/index.html"><img id="mainlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+            alt="mainlogo"></a>
+          <a href="/cartpage/maincart.html"><div>Cancel</div></a>
+    </div>
     <div class="flex-center">
         <div class="flexCheck">
             <h2>Checkout</h2>
@@ -78,7 +83,88 @@
                     <label for="payTm">Pay with PayTm</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" placeholder="Name on Card" id="name">
+                  
+                </div>
+           
+            <div class="order">
+                <h2 >Order Details</h2>
+                <div id="sortitem"></div>
+            </div>
+
+
+        </div>
+        <div class="flexSum">
+            <h2>Summary</h2>
+            <div class="price-flex-boxes">
+              <span>Total Price:</span>
+              <span id="all_total_price"></span>
+            </div>
+            <div class="price-flex-boxes">
+              <span>Discount Price:</span>
+              <span id="discounted_price"></span>
+            </div>
+            <hr>
+            <div class="price-flex-boxes" id="total_in_bold">
+              <span>Total:</span>
+              <span id="total"></span>
+            </div>
+            <p>Udemy is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+            <p>By completing your purchase you agree to these Terms of Service.</p>
+            <button style="background-color:#a435f0;" onclick="shoppingComplete()">Complete Payment</button>
+            <h1 id="notification"></h1>
+        </div>
+    </div>
+  </body>
+  
+
+</html>
+
+<script src="./payment.js"></script>
+
+<script type="module">
+
+
+   
+   
+
+    let card = document.querySelector("#card")
+    let nbank = document.querySelector("#nBank")
+    let upi = document.querySelector("#upi")
+    let payTm = document.querySelector("#payTm")
+
+    let input =document.querySelector(".inputBox");
+    
+    card.addEventListener("click",()=>{
+
+        input.innerHTML=display();
+        nbank.checked=false;
+        upi.checked= false;
+        payTm.checked=false;
+    })
+
+    nbank.addEventListener("click",()=>{
+        card.checked=false;
+        upi.checked= false;
+        payTm.checked=false;
+        input.innerHTML="";
+    })
+
+    upi.addEventListener("click",()=>{
+        card.checked=false;
+        payTm.checked=false;
+        nbank.checked=false;
+        input.innerHTML="";
+    })
+    payTm.addEventListener("click",()=>{
+        nbank.checked=false;
+        upi.checked= false;
+        card.checked=false;
+        input.innerHTML="";
+    })
+
+
+    function display (){
+        return `  <input type="text" placeholder="Name on Card" id="name">
                     <input type="number" placeholder="Card Number" id="cNum">
                     <div class="calCode">
                         <div class="calender">
@@ -123,81 +209,11 @@
                         
                     </div>
                     <div>
-                        <input type="checkbox" id="check">    Remember this Card</input>
+                        <input type="checkbox" id="check"> Remember this Card</input>
                     </div>
                     <div class="tool">
                         <img src="https://www.vippng.com/png/detail/35-355987_facebook-lock-icon-png-download-secure-svg.png" alt="lock" class="secure">
-                    </div>
-                </div>
-            </form>
-            <div class="order">
-                <h2>Order Details</h2>
-            </div>
-
-
-        </div>
-        <div class="flexSum">
-            <h2>Summary</h2>
-            <div class="price-flex-boxes">
-              <span>Total Price:</span>
-              <span id="all_total_price"></span>
-            </div>
-            <div class="price-flex-boxes">
-              <span>Discount Price:</span>
-              <span id="discounted_price"></span>
-            </div>
-            <hr>
-            <div class="price-flex-boxes" id="total_in_bold">
-              <span>Total:</span>
-              <span id="total"></span>
-            </div>
-            <p>Udemy is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
-            <p>By completing your purchase you agree to these Terms of Service.</p>
-            <button style="background-color:#a435f0;" onclick="shoppingComplete()">Complete Payment</button>
-            <h1 id="notification"></h1>
-        </div>
-    </div>
-  </body>
-  
-
-</html>
-
-<script src="./payment.js"></script>
-
-<script type="module">
-    let header = document.querySelector("#navbar");
-    let footerbar = document.querySelector("#footer");
-    // import navbar from "/componets/Navbar.js"
-    // import footer from "/componets/footer.js"
-    // header.innerHTML = navbar();
-    // footerbar.innerHTML = footer();
-
-    let card = document.querySelector("#card")
-    let nbank = document.querySelector("#nBank")
-    let upi = document.querySelector("#upi")
-    let payTm = document.querySelector("#payTm")
-    
-    card.addEventListener("click",()=>{
-        nbank.checked=false;
-        upi.checked= false;
-        payTm.checked=false;
-    })
-
-    nbank.addEventListener("click",()=>{
-        card.checked=false;
-        upi.checked= false;
-        payTm.checked=false;
-    })
-
-    upi.addEventListener("click",()=>{
-        card.checked=false;
-        payTm.checked=false;
-        nbank.checked=false;
-    })
-    payTm.addEventListener("click",()=>{
-        nbank.checked=false;
-        upi.checked= false;
-        card.checked=false;
-    })
+                    </div>`
+    }
     
 </script>
