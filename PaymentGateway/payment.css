@@ -137,7 +137,8 @@
   #total_in_bold span {
     font-weight: 800;
   }
-  .flexSum > button {
+  #btn {
+    text-align: center;
     padding: 15px 20px;
     width: 90%;
     border: none;
@@ -154,13 +155,22 @@
     font-size: 12px;
   }
   #notification {
+    padding: 20px;
     margin: 20px auto;
     text-align: center;
-    color: greenyellow;
     border: 1px solid;
     margin-top: 100px;
   }
+#notification input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
 
+}
   #navbar {
     width: 100%;
     height: 65px;

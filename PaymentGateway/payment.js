@@ -9,71 +9,72 @@ discounted_price.innerText= totalcartprice;
 total.innerText=totalcartprice;
 
 
-window.onbeforeunload = function() {
-  websocket.onclose = function () {}; // disable onclose handler first
-  websocket.close();
-};
 
- function shoppingComplete() {
 
-  let array = [
-    "Payment Successfull",
-    "Course Linked with Your Profile",
-    "Happy Learning!",
-  ];
-
-  let h1 = document.getElementById("notification");
-  let index = 0;
-  h1.textContent = array[index++];
-  setTimeout(function () {
-    h1.textContent = array[index++];
-  }, 3000);
-  setTimeout(function () {
-    h1.textContent = array[index++];
-  }, 8000);
-}
-
-// let h1 = document.getElementById("notification");
-
-// function shoppingComplete() {
-// let index=0;
-//  let name= document.createElement('h2')
-//  name.innerText="Enter OTP"
-//  let input= document.createElement('input');
-//  index.placeholder="ENTER HERE";
-//  let btn= document.createElement('button');
-//  btn.addEventListener("click",function(){
-//   displaypay(index);
-//  })
-
-//  h1.append(name,input,btn);
-// }
-// function displaypay(){
- 
-//   h1.innerHTML="";
+//  function shoppingComplete() {
 
 //   let array = [
-//     "Please wait Payment In Process",
 //     "Payment Successfull",
 //     "Course Linked with Your Profile",
 //     "Happy Learning!",
 //   ];
 
-
-//   // let i = 0;
+//   let h1 = document.getElementById("notification");
+//   let index = 0;
 //   h1.textContent = array[index++];
-//   setTimeout(function () {
-//     h1.textContent = array[index++];
-//   },3000);
 //   setTimeout(function () {
 //     h1.textContent = array[index++];
 //   }, 3000);
 //   setTimeout(function () {
 //     h1.textContent = array[index++];
-//   },4000);
-
-//   Window.location.href="/pages/mylearning.html"
+//   }, 8000);
 // }
+
+let h1 = document.getElementById("notification");
+
+function shoppingComplete() {
+let index=0;
+ let name= document.createElement('h3')
+ name.innerText="Enter OTP"
+ let input= document.createElement('input');
+ index.placeholder="ENTER HERE";
+
+ input.addEventListener("keypress",function(e){
+  if(e.code==='Enter'){
+    displaypay(index);
+  }
+ })
+ h1.append(name,input);
+}
+
+function displaypay(index){
+
+  h1.innerHTML="";
+
+  let array = [
+    "Please wait Payment In Process",
+    "Payment Successfull",
+    "Course Linked with Your Profile",
+    "Happy Learning!",
+  ];
+
+
+  h1.textContent = array[index++];
+  setTimeout(function () {
+    h1.textContent = array[index++];
+  },4000);
+  setTimeout(function () {
+    h1.textContent = array[index++];
+  },3000);
+  setTimeout(function () {
+    h1.textContent = array[index++];
+  },4000);
+  setTimeout(function () {
+    window.location.href="/pages/mylearning.html"
+  },4000);
+
+  
+}
 
 
 
@@ -96,6 +97,7 @@ pricebox.setAttribute("id","pricebox")
 pricebox.style.display="block"
 let price= document.createElement("h4");
 price.innerText="Rs"+el.price;
+
 
 box2.append(image,title);
 pricebox.append(price)

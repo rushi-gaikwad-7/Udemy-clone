@@ -85,6 +85,3 @@ appendslider(jsCourses,jSsliderbox)
 var items3= document.querySelectorAll("#jssliderbox>div");
 doSlide(items3,"prev3","next3")
 
-document.querySelector("#checkoutbtn").addEventListener("click",()=>{
-    window.location.href="../PaymentGateway/payment.html"
-})
