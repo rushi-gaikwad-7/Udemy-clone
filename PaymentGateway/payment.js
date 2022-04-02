@@ -9,8 +9,8 @@ discounted_price.innerText= totalcartprice;
 total.innerText=totalcartprice;
 
 
-function shoppingComplete() {
 
+function shoppingComplete() {
   let array = [
     "Payment Successfull",
     "Course Linked with Your Profile",
@@ -21,9 +21,6 @@ function shoppingComplete() {
   let index = 0;
   h1.textContent = array[index++];
   setTimeout(function () {
-   
-  }, 3000);
-  setTimeout(function () {
     h1.textContent = array[index++];
   }, 3000);
   setTimeout(function () {
@@ -32,6 +29,48 @@ function shoppingComplete() {
 
   Window.location.href="/pages/mylearning.html"
 }
+
+// let h1 = document.getElementById("notification");
+
+// function shoppingComplete() {
+// let index=0;
+//  let name= document.createElement('h2')
+//  name.innerText="Enter OTP"
+//  let input= document.createElement('input');
+//  index.placeholder="ENTER HERE";
+//  let btn= document.createElement('button');
+//  btn.addEventListener("click",function(){
+//   displaypay(index);
+//  })
+
+//  h1.append(name,input,btn);
+// }
+// function displaypay(){
+ 
+//   h1.innerHTML="";
+
+//   let array = [
+//     "Please wait Payment In Process",
+//     "Payment Successfull",
+//     "Course Linked with Your Profile",
+//     "Happy Learning!",
+//   ];
+
+
+//   // let i = 0;
+//   h1.textContent = array[index++];
+//   setTimeout(function () {
+//     h1.textContent = array[index++];
+//   },3000);
+//   setTimeout(function () {
+//     h1.textContent = array[index++];
+//   }, 3000);
+//   setTimeout(function () {
+//     h1.textContent = array[index++];
+//   },4000);
+
+//   Window.location.href="/pages/mylearning.html"
+// }
 
 
 
