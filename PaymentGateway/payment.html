@@ -32,7 +32,7 @@
                     <div class="oncon">State/ Union Territiry</div>
                     <div>
                         <select  name="" id="country">
-                            <option>Please select...</option>
+                        <option>Please select...</option>
                         <option>Andaman and Nicobar Islands</option>
                         <option>Andhra Pradesh</option>
                         <option>Arunachal Pradesh</option>
@@ -118,7 +118,7 @@
             </div>
             <p>Udemy is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
             <p>By completing your purchase you agree to these Terms of Service.</p>
-            <button  onclick="shoppingComplete()">Complete Payment</button>
+            <button  id="mybtn" onclick="shoppingComplete()">Complete Payment</button>
             <h1 id="notification"></h1>
         </div>
     </div>
@@ -126,11 +126,13 @@
   
 
 </html>
-
 <script src="./payment.js"></script>
-
 <script type="module">
 
+window.onbeforeunload = function() {
+  websocket.onclose = function () {}; // disable onclose handler first
+  websocket.close();
+};
 
     let card = document.querySelector("#card")
     let nbank = document.querySelector("#nBank")

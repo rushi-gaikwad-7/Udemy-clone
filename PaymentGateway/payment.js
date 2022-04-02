@@ -9,8 +9,13 @@ discounted_price.innerText= totalcartprice;
 total.innerText=totalcartprice;
 
 
+window.onbeforeunload = function() {
+  websocket.onclose = function () {}; // disable onclose handler first
+  websocket.close();
+};
 
-function shoppingComplete() {
+ function shoppingComplete() {
+
   let array = [
     "Payment Successfull",
     "Course Linked with Your Profile",
@@ -26,8 +31,6 @@ function shoppingComplete() {
   setTimeout(function () {
     h1.textContent = array[index++];
   }, 8000);
-
-  Window.location.href="/pages/mylearning.html"
 }
 
 // let h1 = document.getElementById("notification");
