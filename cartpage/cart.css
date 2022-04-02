@@ -4,9 +4,10 @@
 }
 #cartbox{
     display: grid;
-    grid-template-columns: 78% 22%;
+    grid-template-columns: 75% 22%;
     gap:35px;
 }
+
 .jsslide{
    width: 90%;
    margin: auto;
@@ -17,7 +18,7 @@
     margin: auto;
 }
 #sortitem{
-width: 80%;
+width:80%;
 }
 #sortitem>div{
 display: flex;
