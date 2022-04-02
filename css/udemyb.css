@@ -4,14 +4,24 @@ body {
     background: url(image/imageback1.jpg);
     background-repeat: no-repeat;
   }
- 
+ #logo{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+   margin-bottom: 50px;
+ }
+ #logo img{
+  width: 80px;
+  height: 50px;
+}
   .flexBox {
     width: 80%;
     height: 776px;
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 10%;
     column-gap: 68px;
+    margin-bottom: 100px;
     /* border: 1px solid; */
   }
   .box {
