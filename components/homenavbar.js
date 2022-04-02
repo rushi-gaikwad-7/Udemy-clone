@@ -62,25 +62,27 @@ const homenavbar = () => {
          <i class="fa-solid fa-magnifying-glass"></i>
          <input type="text" placeholder="Search for anything" id="navsearch">
      </div>
-     <a href=""><div id="Business">Udemy Business
+     <a href="/pages/udemyb.html"><div id="Business">Udemy Business
      <div id="bhoverDiv">
         <h4>Get your team access to over 6,000 top Udemy courses, anytime, anywhere.</h4>
         <div>Try Udemy for Business</div>
     </div>
     </div></a>
-     <a href=""><div id="tech">Teach on Udemy
+     <a href="/pages/techOnudamy.html"><div id="tech">Teach on Udemy
      <div id="thoverDiv">
      <h4>Turn what you know into an opportunity and reach millions around the world.</h4>
      <div>Learn more</div>
  </div></div></a>
-     <a href=""><div id="learing">My learing
+     <a href="/pages/mylearning.html"><div id="learing">My learing
      <div id="LrhoverDiv">
      <h4>Start learning from over 183,000 courses today.</h4>
      <div>Browse now</div>
  </div></div></a>
-     <div id="wishlist">
-     <i class="fa-regular fa-heart"></i>
-     </div>
+ <a href="/pages/wishlist.html">
+ <div id="wishlist">
+ <i class="fa-regular fa-heart"></i>
+ </div></a>
+    
      <a href="/cartpage/maincart.html">
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">

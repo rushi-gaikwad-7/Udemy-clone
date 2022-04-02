@@ -29,6 +29,8 @@ function shoppingComplete() {
   setTimeout(function () {
     h1.textContent = array[index++];
   }, 8000);
+
+  Window.location.href="/pages/mylearning.html"
 }
 
 

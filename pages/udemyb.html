@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/udemyb.css" />
+    <link rel="stylesheet" href="/css/homenavebar.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/categories.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+</head>
+
+<body>
+
+    <div id="homenavbar"></div>
+
+    <header class="header">
+        <div class="flexBox"> 
+            <div class="box">
+                <div class="headText">Get your demo</div>
+                <div class="text">
+                    See why leading organizations choose Udemy for Business as their
+                    destination for employee learning
+                </div>
+                <div class="downBox">
+                    <div class="lhBox"></div>
+                    <div class="rhBox">
+                        <div class="lhSide">In your demo, learn more about:</div>
+                        <ul>
+                            <li>
+                                Unlimited access to 5,500+ top courses selected from Udemy.com
+                                – anytime, on any device
+                            </li>
+                            <li>
+                                Fresh content taught by global instructors – for any learning
+                                style
+                            </li>
+                            <li>Actionable learning insights and admin functionality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spaceBox"></div>
+            <div class="box1">
+                <form action="">
+                    <input type="text" class="inputBox" placeholder="First Name">
+                    <input type="text" class="inputBox" placeholder="Last Name*" />
+                    <input type="text" class="inputBox" placeholder="Work Email*" />
+                    <input type="text" class="inputBox" placeholder="Phone Number*" />
+                    <input type="text" class="inputBox" class="inputBox" placeholder="Company Name*" />
+                    <input type="text" class="inputBox" placeholder="Job Title*" />
+                    <select class="selectBox">
+                        <option>Select...</option>
+                        <option>I,m a contractor / freelancer</option>
+                        <option value="">1-199</option>
+                        <option value="">200-1,999</option>
+                        <option value="">2,000-5,000</option>
+                        <option value="">5,000+</option>
+                    </select>
+                    <select class="selectBox">
+                        <option value="">Select...</option>
+                        <option value="">5-20</option>
+                        <option value="">21-200</option>
+                        <option value="">201-2,000</option>
+                        <option value="">2,001+</option>
+                    </select>
+                    <input type="text" class="textBox" placeholder="What are your training needs?" />
+                    <button id="button">Get in touch</button>
+                    <div class="policy">
+                        By signing up, you agree to our
+                        <a href="https://www.udemy.com/terms/ufb/">terms</a> and
+                        <a href="https://www.udemy.com/terms/ufb-privacy/">
+                            privacy policy</a>. You agree that we can contact you about Udemy and use data from
+                        third parties to personalize your experience.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div id="footer"> </div>
+</body>
+
+</html>
+
+<script type="module">
+    let header = document.querySelector("#homenavbar");
+    let footerbar = document.querySelector("#footer");
+    import homenavbar from "/components/homenavbar.js"
+    import homefooter from "/components/homefooter.js"
+    header.innerHTML = homenavbar();
+    footerbar.innerHTML = homefooter();
+
+import{modifyFullname} from "/scripts/profile.js"
+let loginDetails = JSON.parse(localStorage.getItem('loginDetails'));
+let udemyUsers = JSON.parse(localStorage.getItem('udemyUsers'));
+let btnUser = document.getElementById('profile');
+for (let i = 0; i < loginDetails.length; i++) {
+    for (let j = 0; j < udemyUsers.length; j++) {
+        if (loginDetails[i].loginEmail == udemyUsers[j].signupEmail) {
+            btnUser.innerText = `${modifyFullname(udemyUsers[j].signupFullname)}`
+        }
+    }
+
+}
+
+</script>

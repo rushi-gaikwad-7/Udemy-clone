@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(image/imageback1.jpg);
+    background-repeat: no-repeat;
+  }
+ 
+  .flexBox {
+    width: 80%;
+    height: 776px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 10%;
+    column-gap: 68px;
+    /* border: 1px solid; */
+  }
+  .box {
+    width: 580px;
+    height: 700px;
+    /* border: 1px solid; */
+  }
+  .box1 {
+    width: 490px;
+    height: 720px;
+    /* border: 1px solid; */
+    padding-top: 55px;
+  }
+ 
+  .headText {
+    font-family: "Roboto Slab", serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: black;
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .text {
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    color: #151348;
+    line-height: 50px;
+  }
+  .downBox {
+    width: 580px;
+    height: 260px;
+    /* border: 1px solid; */
+    margin-top: 50px;
+    display: flex;
+  }
+ 
+  .rhBox {
+    width: 560px;
+    height: 260px;
+    /* border: 1px solid; */
+  }
+  .lhSide {
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    font-weight: 510;
+    color: #151348;
+    margin-left: 25px;
+    line-height: 55px;
+  }
+  ul li {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    color: #151348;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .headImg {
+    width: 100%;
+    height: 100%;
+  }
+  .inputBox {
+    width: 465px;
+    height: 54px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 20px;
+  }
+  ::placeholder {
+    color: rgb(75, 70, 70);
+    font-size: 14px;
+  }
+  .textBox {
+    width: 465px;
+    height: 72px;
+    color: rgb(75, 70, 70);
+    border: 1px solid gray;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .selectBox {
+    width: 488px;
+    height: 58px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  #button {
+    width: 488px;
+    height: 58px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  .policy {
+    font-size: 13px;
+  }
