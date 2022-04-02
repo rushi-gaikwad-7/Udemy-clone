@@ -9,6 +9,7 @@
     justify-content: center;
     column-gap: 40px;
     /* border: 1px solid */
+    margin-left: -500px;
   }
   .flexCheck {
     width: 750px;
@@ -60,6 +61,11 @@
     flex-direction: column;
     background-color: #f8f8f9;
     border: 1px solid rgb(202, 198, 198);
+  }
+  .form-group>div{
+    border: 1px solid #d1d7dc;
+    padding: 5px;
+    margin-bottom: 10px;
   }
   #name,
   #cNum,
@@ -119,6 +125,10 @@
     font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
       segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
       segoe ui symbol;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      height: 300px;
+     position: fixed;
+     left:60%;
   }
   .price-flex-boxes {
     display: flex;
@@ -128,19 +138,23 @@
     font-weight: 800;
   }
   .flexSum > button {
-    padding: 10px 20px;
-    width: 60%;
-    background-color: #ec5353;
+    padding: 15px 20px;
+    width: 90%;
+    border: none;
     color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
   }
   .flexSum > button:hover {
     background-color: #dd1b1b;
   }
   .flexSum span,
   .flexSum p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
-  
+  .flexSum>p {
+    font-size: 12px;
+  }
   #notification {
     margin: 20px auto;
     text-align: center;
@@ -174,7 +188,11 @@ a:link {
   margin-bottom: 20px;
   padding: 10px;
 }
+#box>div{
+  display: flex;
+}
 #box img{
 width: 50px;
+margin-right: 10px;
 }
   

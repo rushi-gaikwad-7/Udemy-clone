@@ -59,9 +59,10 @@
      <h4>Turn what you know into an opportunity and reach millions around the world.</h4>
      <div>Learn more</div>
  </div></div></a>
-     <div id="bag">
-     <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
-     </div>
+ <a href="/cartpage/maincart.html">
+ <div id="bag">
+ <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
+ </div></a>
      <a href="/login/login.html"><div id="login">Log in</div></a>
      <a href="/signup/signup.html"><div id="signup">Sign up</div></a>
      <div id="lng">

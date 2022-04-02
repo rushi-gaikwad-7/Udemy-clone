@@ -38,9 +38,10 @@ sortbox.innerHTML="";
 data.map((el,index)=>{
  let box= document.createElement('div');
  box.id="box";
+ let box2= document.createElement('div');
  let image= document.createElement('img');
  image.src=el.image;
- let title= document.createElement("h4");
+ let title= document.createElement("h5");
  title.innerText=el.title;
 let pricebox= document.createElement("div");
 pricebox.setAttribute("id","pricebox")
@@ -48,9 +49,9 @@ pricebox.style.display="block"
 let price= document.createElement("h4");
 price.innerText="Rs"+el.price;
 
-
+box2.append(image,title);
 pricebox.append(price)
-box.append(image,title,pricebox);
+box.append(box2,pricebox);
 sortbox.append(box);
 })
 }

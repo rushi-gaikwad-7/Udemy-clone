@@ -81,9 +81,11 @@ const homenavbar = () => {
      <div id="wishlist">
      <i class="fa-regular fa-heart"></i>
      </div>
+     <a href="/cartpage/maincart.html">
      <div id="bag">
      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="">
-     </div>
+     </div></a>
+    
      <div id="bellicon">
      <i class="fa-regular fa-bell"></i>
      </div>
