@@ -1,5 +1,9 @@
+
+
 # Udemy-clone
 Construct Week Project
+
+Our team consists of 5 people including Me, Aman Jaiswal, Diksha Sharma, Sachin Mali Patil, and Avirup Samadder. 
 
 TOPIC STATEMENT
 
@@ -37,3 +41,9 @@ FUNCTIONALITIES IMPLEMENTED
 
 
 Take the course and GO TO OUR UDEMY !!
+
+
+Blog link: https://medium.com/@gaikwadrushi777/clone-of-udemy-website-3d08d5c0ef79
+
+
+
