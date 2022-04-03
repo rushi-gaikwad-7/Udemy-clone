@@ -3,7 +3,7 @@
 # Udemy-clone
 Construct Week Project
 
-Our team consists of 5 people including Me, Aman Jaiswal, Diksha Sharma, Sachin Mali Patil, and Avirup Samadder. 
+Our team consists of 5 people including Me, Aman Jaiswal, Diksha Sharma, Sachin Smp, and Avirup Samadder. 
 
 TOPIC STATEMENT
 
