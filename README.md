@@ -25,7 +25,7 @@ STEPS FOLLOWED
 
 FUNCTIONALITIES IMPLEMENTED
 
-1. ignup via gmail,facebook, after that it will go to login 
+1. Signup via gmail,facebook, after that it will go to login 
 2. Search bar Shows the Courses searched for
 3. Can directly add to cart from here
 4. Filter Course based on Sorting,
