@@ -42,6 +42,7 @@ FUNCTIONALITIES IMPLEMENTED
 
 Take the course and GO TO OUR UDEMY !!
 
+##Demo Link (https://verdant-kitten-680f9d.netlify.app/)
 
 Blog link: https://medium.com/@gaikwadrushi777/clone-of-udemy-website-3d08d5c0ef79
 
