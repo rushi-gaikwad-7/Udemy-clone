@@ -11,7 +11,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 ## Demo  🎥
 
-- Deployed Link:- [Enjoy the Experience](https://verdant-kitten-680f9d.netlify.app/)
+- Deployed Link:- [Enjoy the Experience](https://github.com/rushig777/Udemy-clone)
 
 STEPS FOLLOWED
 
